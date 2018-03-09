@@ -1,0 +1,40 @@
+@font-face {
+    font-family: font-bold-cond;
+    src: url("dinn_bold_condensed.otf") format("opentype");
+    
+}
+@font-face {
+    font-family: font-bold;
+    src: url("dinn_bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-regular;
+    src: url("dinn_regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-condensed;
+    src: url("dinn_black_condensed.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-med-condensed;
+    src: url("dinn_med_condensed.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-light;
+    src: url("dinn_light.otf") format("opentype");
+}
+@font-face {
+    font-family: font-light-condensed;
+    src: url("dinn_light_condensed.otf") format("opentype");
+}
+@font-face {
+    font-family: font-cat;
+    src: url("dinn_cat.otf") format("opentype");
+}
+.f-bold{
+   font-family: font-bold; 
+}
