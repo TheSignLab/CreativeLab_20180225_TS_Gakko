@@ -1,0 +1,163 @@
+/**
+ *  Filename : s2_philosophy.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_mixins.less";
+@import "../../base/_vars.less";
+
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+section[name="activitiesSchedule"] wrapper {
+
+    background-color: @color-white;
+
+    swiper {
+
+        div.swiper-container {
+            height: auto;
+            min-height: 50vh;
+            display: block;
+
+            margin: 0 auto;
+
+            box-sizing: border-box;
+
+            border-top: 1vw solid @color-black;
+            overflow-y: scroll;
+
+            position: relative;
+
+
+            background-color: @color-yellow;
+            color: black;
+
+
+
+            background-image: linear-gradient(to right, #333 52%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 10vw 1.5vw;
+            background-repeat: repeat-x;
+
+
+        }
+
+        .swiper-pagination-custom.toMiddle {
+            bottom: auto;
+            top: -3.5vw;
+            left: calc(50% - 40%);
+            z-index: 50;
+            width: 80%;
+        }
+        .swiper-pagination tabs[type="dynamic"] {
+            width: 100%;
+        }
+        .swiper-buttons {
+            position: relative;
+            top: -3.5vw;
+            z-index: 10;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            .flex-display(flex);
+            .flex-direction(row);
+            .flex-wrap(wrap);
+            .justify-content(space-between);
+            .align-content(center);
+            .align-items(center);
+        }
+        .swiper-buttonPrev,
+        .swiper-buttonNext {
+            width: 8vw;
+            height: 8vw;
+            display: block;
+            background-color: white;
+
+
+        }
+    }
+}
+
+
+@media @query-macbook {
+
+    section[name="activitiesSchedule"] wrapper {
+
+        background-color: @color-white;
+
+        swiper {
+
+            div.swiper-container {
+                height: auto;
+                min-height: 50vh;
+                display: block;
+
+                margin: 0 auto;
+
+                box-sizing: border-box;
+
+                border-top: 1vw solid @color-black;
+                overflow-y: scroll;
+
+                position: relative;
+
+
+                background-color: @color-yellow;
+                color: black;
+
+
+
+                background-image: linear-gradient(to right, #333 52%, rgba(255, 255, 255, 0) 0%);
+                background-position: bottom;
+                background-size: 10vw 1.5vw;
+                background-repeat: repeat-x;
+
+
+            }
+
+            .swiper-pagination-custom.toMiddle {
+                bottom: auto;
+                top: -3.5vw;
+                left: calc(50% - 40%);
+                z-index: 50;
+                width: 80%;
+            }
+            .swiper-pagination tabs[type="dynamic"] {
+                width: 100%;
+            }
+            .swiper-buttons {
+                position: relative;
+                top: -1.2vw;
+                z-index: 10;
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+                position: absolute;
+                .flex-display(flex);
+                .flex-direction(row);
+                .flex-wrap(wrap);
+                .justify-content(space-between);
+                .align-content(center);
+                .align-items(center);
+            }
+            .swiper-buttonPrev,
+            .swiper-buttonNext {
+                width: 3vw;
+                height: 3vw;
+                display: block;
+                background-color: white;
+            }
+        }
+    }
+}

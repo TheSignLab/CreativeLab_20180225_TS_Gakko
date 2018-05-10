@@ -1,0 +1,63 @@
+/**
+ *  Filename : s2_philosophy.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_mixins.less";
+@import "../../base/_vars.less";
+
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+section[name="aboutPhilosophy"] wrapper {
+
+    background-color: @color-yellow;
+
+    swiper {
+
+        div.swiper-container {
+            height: auto;
+            min-height: 50vh;
+            display: block;
+
+            margin: 0 auto;
+
+            box-sizing: border-box;
+
+            border-top: 1vw solid @color-black;
+            overflow-y: scroll;
+
+            position: relative;
+
+
+            background-color: @color-white;
+            color: black;
+
+
+
+            background-image: linear-gradient(to right, #333 52%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 10vw 1.5vw;
+            background-repeat: repeat-x;
+
+            li.item:before {
+
+                display: inline-block;
+                width: 1em;
+                margin-left: -1.2em;
+                top: 0.25em;
+                left: 0px;
+                content: url('/img/checklist/checkmark_y.svg');
+                position: relative;
+            }
+
+        }
+    }
+}

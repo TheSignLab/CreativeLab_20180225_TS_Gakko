@@ -1,0 +1,48 @@
+/**
+ *  Filename : s1_process.less
+ *  View : route =>admissions
+
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_vars.less";
+@import "../../base/_mixins.less";
+
+
+section[name="admissionProcess"] {
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: block;
+
+    wrapper {
+        width: 100vw;
+        height: auto;
+
+        display: block;
+
+        background-color: @color-white;
+        color: black;
+    }
+
+    [swiper-name="admissionProcess"] {
+        padding-bottom: 10vh;
+        margin-bottom: 20vh;
+    }
+    [swiper-name="admissionProcess"] div.swiper-container {
+        width: 82vw;
+
+        padding: 5vw;
+        margin-top: 10vw;
+        padding-bottom: 10vw;
+
+        background-color: @color-yellow;
+        color: black;
+    }
+}

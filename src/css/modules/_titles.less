@@ -1,0 +1,166 @@
+/**
+ *  Filename : Titles.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../base/_mediaQueries.less";
+@import "../base/_vars.less";
+@import "../base/_mixins.less";
+
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+cover-title {
+    display: block;
+    width: 71vw;
+    font-size: 10vw;
+    text-align: center;
+    padding-top: 8vh!important;
+    letter-spacing: 0.4vw;
+    font-family: font-med-condensed;
+    color: @color-yellow;
+}
+
+cover-subtitle {
+    display: block;
+    width: 45vw;
+    font-size: 5vw;
+    text-align: center;
+    font-family: font-cat;
+    color: @color-white;
+    margin: 0 auto;
+    display: block;
+}
+
+section-title {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 12vw;
+    padding-top: 7vw;
+    h2 {
+        width: 100%;
+        font-size: 9vw;
+        text-align: center;
+        padding-top: 0vw;
+        letter-spacing: 0.4vw;
+        font-family: font-med-condensed;
+        color: @color-black;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        .f-mcond {
+            font-size: 1em;
+            font-family: font-med-condensed;
+        }
+        .f-cat {
+            font-size: 0.9em;
+        }
+    }
+}
+
+section-title:after {
+    background-image: url(../../img/underlines/underline.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 2.5vw;
+    content: "";
+
+}
+
+section-title.small:after {
+    background-image: url(../../img/underlines/underline_small.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 2.5vw;
+    content: "";
+
+}
+
+
+
+@media @query-macbook {
+
+    section.cover {
+        cover-title {
+            display: block;
+            width: 41vw;
+            font-size: 6vw;
+            text-align: center;
+            padding-top: 0px!important;
+            letter-spacing: 0.4vw;
+            font-family: font-med-condensed;
+            color: #f7b41b;
+        }
+
+        cover-subtitle {
+            display: block;
+            width: 41vw;
+            font-size: 3vw;
+            text-align: center;
+            font-family: font-cat;
+            color: @color-white;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+
+    section-title {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 0vw;
+        padding-top: 0vw;
+        h2 {
+            font-size: 5vw;
+            padding-top: 0vw;
+            letter-spacing: 0.1vw;
+
+            .f-mcond {
+                font-size: 1em;
+            }
+            .f-cat {
+                font-size: 0.85em;
+            }
+        }
+    }
+
+
+
+    section-title:after {
+        background-image: url(../../img/underlines/underline.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 2.5vw;
+        content: "";
+
+    }
+
+    section-title.small:after {
+        background-image: url(../../img/underlines/underline_small.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 2.5vw;
+        content: "";
+
+    }
+
+}

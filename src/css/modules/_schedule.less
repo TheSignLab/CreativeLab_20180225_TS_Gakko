@@ -1,0 +1,119 @@
+/**
+ *  Filename : _schedule.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../base/_mediaQueries.less";
+@import "../base/_mixins.less";
+@import "../base/_vars.less";
+
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+schedule-course {
+
+    width: 70vw;
+    display: block;
+    margin: 20vw auto;
+
+    schedule-day {
+        display: block;
+        width: 100%;
+        margin: 30vw auto;
+        font-size: 7vw;
+    }
+
+    schedule-item {
+        display: block;
+
+
+        font-family: font-med-condensed;
+        line-height: 100%;
+
+        background-color: white;
+        color: black;
+
+        width: 100%;
+
+        padding: 2vw 4vw;
+        margin: 3vw auto;
+
+        box-sizing: border-box;
+
+        .flex-display(flex);
+        .flex-direction(column);
+        .flex-wrap(wrap);
+        .justify-content(center);
+        .align-content(center);
+        .align-items(flex-start);
+
+
+        &.title-day {
+            background-color: black;
+            color: @color-yellow;
+            text-align: center;
+            padding: 1vw 0vw;
+            font-size: 1.2em;
+            span {
+                -webkit-align-self: center;
+                align-self: center;
+            }
+
+        }
+
+        &.open {}
+        &.close {}
+
+        &.break {
+            background-color: black;
+            color: @color-white;
+            text-align: left;
+
+            font-size: 1em;
+        }
+        &.lunch {
+            background-color: black;
+            color: @color-white;
+            text-align: left;
+
+            font-size: 1em;
+        }
+
+    }
+
+}
+
+@media @query-macbook {
+
+    schedule-course {
+
+        width: 70vw;
+        display: block;
+        margin: 0vw auto;
+        .flex-display(flex);
+            .flex-direction(row);
+            .flex-wrap(wrap);
+            .justify-content(flex-start);
+            .align-content(flex-start);
+            .align-items(flex-start);
+
+        schedule-day {
+            margin: 0px;
+            width: 20%;
+            font-size: 3vw;
+            
+        }
+        schedule-item {
+            width: 100%;
+            padding: 0vw 0vw;
+            margin: 0vw auto;
+        }
+    }
+
+}

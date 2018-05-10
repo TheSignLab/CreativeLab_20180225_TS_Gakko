@@ -1,0 +1,28 @@
+/**
+ *  Filename : s1_process.less
+ *  View : route =>admissions
+
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_vars.less";
+@import "../../base/_mixins.less";
+
+
+section[name="aboutTimeline"] {
+
+    background-color: @color-black;
+    color: @color-white;
+
+    section-title h2 {
+        filter: invert(100%);
+    }
+    section-title:after {
+         filter: invert(100%);
+
+    }
+}

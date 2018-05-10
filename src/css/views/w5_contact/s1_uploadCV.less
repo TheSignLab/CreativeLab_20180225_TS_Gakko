@@ -1,0 +1,107 @@
+/**
+ *  Filename : nav.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_mixins.less";
+@import "../../base/_vars.less";
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+section[name="contactUploadCV"] {
+    swiper {
+        padding-bottom: 50vw;
+        margin-bottom: 0px;
+        .swiper-container {
+            padding-bottom: 20vw;
+            margin-bottom: 0vw;
+        }
+        column {}
+    }
+    form {
+
+        position: relative;
+        top: -5vw;
+        input {
+            display: none;
+        }
+        label {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: font-med-condensed;
+            padding: 5vw;
+            position: relative;
+            top: -1vw;
+            z-index: 50;
+        }
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media @query-macbook {
+    section[name="contactUploadCV"] {
+        swiper {
+            padding-bottom: 0vw;
+            margin-bottom: 0px;
+            .swiper-container {
+                padding-bottom: 0vw;
+                margin-bottom: 0vw;
+                height: auto;
+                min-height: 0px;
+            }
+            column {
+                .flex-display(flex);
+                .flex-direction(column);
+                .flex-wrap(wrap);
+                .justify-content(flex-start);
+                .align-content(flex-start);
+                .align-items(flex-start);
+            }
+            .slide-title-2 {
+                display: block;
+            }
+
+        }
+        form {
+
+            position: relative;
+            top: -5vw;
+            input {
+                display: none;
+            }
+            label {
+                span{
+                    font-size: 2vw;
+                }
+                display: block;
+                width: fit-content;
+                margin: 0 auto;
+                text-align: center;
+                background-color: black;
+                color: white;
+                font-family: font-med-condensed;
+                padding: 1.5vw;
+                position: relative;
+                top: 2vw;
+                z-index: 50;
+            }
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+    }
+}
