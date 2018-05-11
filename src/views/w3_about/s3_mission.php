@@ -30,7 +30,7 @@ $htmlSlide2 = '
 
 ';
 
-?>;
+?>
 
 
 
@@ -66,31 +66,30 @@ $htmlSlide2 = '
             <div class="swiper-pagination toMiddle "></div>
 
         </swiper>
-        
-   
+
+
     </wrapper>
-         <div class="swiper-sticky" from-swiper="mission">
-            
-            <div class="swiper-paso" paso="1">
-                <div class="mobile"> 
-                    <img id="w3_s4_t1_e1_img" 
-                         alt="Profesor con Libros" src="/img/img-floating/w3_about/CTS_26.png">
-                    <anim id="w3_s4_t1_e1_obj" alt="Trazo animado"></anim>
-                    
-                 
-                </div>
-                <div class="desktop"> </div>
+    <div class="swiper-sticky" from-swiper="mission">
+
+        <div class="swiper-paso" paso="1">
+            <div class="mobile">
+                <img id="w3_s4_t1_e1_img" alt="Profesor con Libros" src="/img/img-floating/w3_about/CTS_26.png">
+                <anim id="w3_s4_t1_e1_obj" alt="Trazo animado"></anim>
+                <anim id="w3_s4_t1_e2_obj" alt="Lapiz Animado"></anim>
+
             </div>
-            
-            <div class="swiper-paso" paso="2">
-                <div class="mobile">
-                    <img id="w3_s4_t2_e1_img" 
-                         alt="Profesora con libros" src="/img/img-floating/w3_about/CTS_27.png">
-                    <anim id="w3_s4_t2_e1_obj" alt="Curva animado"></anim>
-                    <anim id="w3_s4_t2_e2_obj" alt="Birrete animado"></anim>
-                </div>
-                <div class="desktop"> </div>
-            </div>
+            <div class="desktop"> </div>
         </div>
+
+        <div class="swiper-paso" paso="2">
+            <div class="mobile">
+                <img id="w3_s4_t2_e1_img" alt="Profesora con libros" src="/img/img-floating/w3_about/CTS_27.png">
+                <anim id="w3_s4_t2_e1_obj" alt="Curva animado"></anim>
+                <anim id="w3_s4_t2_e2_obj" alt="Birrete animado"></anim>
+
+            </div>
+            <div class="desktop"> </div>
+        </div>
+    </div>
 
 </section>

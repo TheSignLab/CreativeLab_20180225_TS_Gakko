@@ -5,12 +5,6 @@
  *  Update : 03/05/18
  *
 **/
-mobile-nav {
-  display: block;
-}
-desktop-nav {
-  display: none;
-}
 span[color="white"] {
   color: #ffffff;
 }
@@ -19,6 +13,7 @@ span[color="yellow"] {
 }
 section[name="aboutPhilosophy"] wrapper {
   background-color: #f7b41b;
+  padding-bottom: 59vw;
 }
 section[name="aboutPhilosophy"] wrapper swiper div.swiper-container {
   height: auto;
@@ -44,4 +39,10 @@ section[name="aboutPhilosophy"] wrapper swiper div.swiper-container li.item:befo
   left: 0px;
   content: url('/img/checklist/checkmark_y.svg');
   position: relative;
+}
+section[name="aboutPhilosophy"] wrapper swiper p {
+  padding-top: 9vw;
+}
+section[name="aboutPhilosophy"] wrapper swiper ul {
+  padding-bottom: 9vw;
 }

@@ -116,6 +116,7 @@
                     <img id="w3_s3_t1_e1_img" alt="Niña Libros" src="/img/img-floating/w3_about/CTS_24.png">
                     <anim id="w3_s3_t1_e1_obj" alt="Curva"></anim>
                     <anim id="w3_s3_t1_e2_obj" alt="Arcoiris"></anim>
+                    <anim id="w3_s3_t1_e3_obj" alt="Bigotes"></anim>
                 </div>
                 <div class="desktop"> </div>
             </div>
@@ -123,7 +124,8 @@
             <div class="swiper-paso" paso="2">
                 <div class="mobile">
                     <img id="w3_s3_t2_e1_img" alt="Niña Maleta" src="/img/img-floating/w3_about/CTS_25.png">
-                    <anim id="w3_s3_t2_e1_obj" alt="Birrete con Flechitas"></anim>
+                    <anim id="w3_s3_t2_e1_obj" alt="Birrete"></anim>
+        
                 </div>
                 <div class="desktop"> </div>
             </div>

@@ -14,12 +14,25 @@ span[color="yellow"] {
   color: #f7b41b;
 }
 section[name="aboutTimeline"] {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 section[name="aboutTimeline"] section-title h2 {
-  filter: invert(100%);
+  filter: invert(0%);
 }
 section[name="aboutTimeline"] section-title:after {
-  filter: invert(100%);
+  filter: invert(0%);
+}
+section[name="aboutTimeline"] section-title {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 6vw;
+  padding-top: 7vw;
+}
+@media (min-width: 1200px)  {
+  section[name="aboutTimeline"] {
+    background-color: #000000;
+    color: #ffffff;
+  }
 }

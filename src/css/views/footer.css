@@ -51,8 +51,8 @@ mobile-footer wrapper-img img {
 }
 mobile-footer wrapper-img item {
   display: inline-block;
-  font-size: 3.7vw;
-  padding-right: 1vw;
+  font-size: 4.3vw;
+  padding-right: 0.5vw;
   margin-right: 0vw;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -114,13 +114,13 @@ mobile-footer wrapper-img[bg-yellow] {
   background-color: #f7b41b;
 }
 mobile-footer wrapper-img[bg-yellow] img {
-  height: 5vw;
-  width: 5vw;
+  height: 4.5vw;
+  width: 4.5vw;
   display: block;
 }
 mobile-footer wrapper-img[bg-yellow] item[emailTo] img {
-  height: 5.55vw;
-  width: 5.55vw;
+  height: 5.0vw;
+  width: 5.0vw;
   display: block;
 }
 desktop-footer wrapper {

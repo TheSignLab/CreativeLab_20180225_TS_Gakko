@@ -5,12 +5,6 @@
  *  Update : 03/05/18
  *
 **/
-mobile-nav {
-  display: block;
-}
-desktop-nav {
-  display: none;
-}
 span[color="white"] {
   color: #ffffff;
 }
@@ -21,29 +15,29 @@ span[color="yellow"] {
   position: absolute;
   top: auto;
   bottom: 0vw;
-  width: 35vw;
+  width: 38vw;
   margin: 0 auto;
   display: block;
-  left: 0vw;
+  left: 8vw;
   z-index: 100;
 }
 #w5_s2_e2_img[alt="Señor"] {
   position: absolute;
   top: auto;
   bottom: 0vw;
-  width: 35vw;
+  width: 35.5vw;
   margin: 0 auto;
   display: block;
-  right: 0vw;
+  right: 8vw;
   z-index: 100;
 }
 #w5_s2_e2_obj[alt="Bigotes/Rayitas"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
+  bottom: 26vw;
   width: 15vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: calc(43vw);
   z-index: 100;
 }

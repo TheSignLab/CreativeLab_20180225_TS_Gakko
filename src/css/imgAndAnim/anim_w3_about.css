@@ -5,12 +5,6 @@
  *  Update : 03/05/18
  *
 **/
-mobile-nav {
-  display: block;
-}
-desktop-nav {
-  display: none;
-}
 span[color="white"] {
   color: #ffffff;
 }
@@ -20,8 +14,8 @@ span[color="yellow"] {
 #w3_s3_t1_e1_img[alt="Niña Libros"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 0vw;
+  width: 35vw;
   margin: 0 auto;
   display: block;
   right: 50vw;
@@ -30,90 +24,110 @@ span[color="yellow"] {
 #w3_s3_t1_e1_obj[alt="Curva"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 14vw;
+  width: 26vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 21vw;
   z-index: 100;
 }
 #w3_s3_t1_e2_obj[alt="Arcoiris"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 71vw;
+  width: 32vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 15vw;
+  z-index: 100;
+}
+#w3_s3_t1_e3_obj[alt="Bigotes"] {
+  position: absolute;
+  top: auto;
+  bottom: 35vw;
+  width: 11vw;
+  margin: 0 auto;
+  display: block;
+  right: 84vw;
   z-index: 100;
 }
 #w3_s3_t2_e1_img[alt="Niña Maleta"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 0vw;
+  width: 44vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 5vw;
   z-index: 100;
 }
-#w3_s3_t2_e1_obj[alt="Birrete con Flechitas"] {
+#w3_s3_t2_e1_obj[alt="Birrete"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 17vw;
+  width: 31vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 57vw;
   z-index: 100;
 }
 #w3_s4_t1_e1_img[alt="Profesor con Libros"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 0vw;
+  width: 48vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 44vw;
+  z-index: 100;
+}
+#w3_s4_t1_e2_obj[alt="Lapiz Animado"] {
+  position: absolute;
+  top: auto;
+  bottom: 10vw;
+  width: 28vw;
+  margin: 0 auto;
+  display: block;
+  right: 5vw;
   z-index: 100;
 }
 #w3_s4_t2_e1_img[alt="Profesora con libros"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 0vw;
+  width: 48vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 7vw;
   z-index: 100;
 }
 #w3_s4_t1_e1_obj[alt="Trazo animado"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 45vw;
+  width: 32vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 49vw;
   z-index: 100;
 }
 #w3_s4_t2_e1_obj[alt="Curva animado"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 9vw;
+  width: 18vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 60vw;
   z-index: 100;
 }
 #w3_s4_t2_e2_obj[alt="Birrete animado"] {
   position: absolute;
   top: auto;
-  bottom: 20vw;
-  width: 15vw;
+  bottom: 47vw;
+  width: 29vw;
   margin: 0 auto;
   display: block;
-  right: 50vw;
+  right: 65vw;
   z-index: 100;
 }

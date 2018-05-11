@@ -20,13 +20,15 @@ schedule-course {
 
     width: 70vw;
     display: block;
-    margin: 20vw auto;
+    margin: 10vw auto;
+    margin-bottom: 0px;
 
     schedule-day {
         display: block;
         width: 100%;
-        margin: 30vw auto;
-        font-size: 7vw;
+        margin: 0vw auto;
+        margin-bottom: 10vw;
+        font-size: 6vw;
     }
 
     schedule-item {
@@ -41,8 +43,8 @@ schedule-course {
 
         width: 100%;
 
-        padding: 2vw 4vw;
-        margin: 3vw auto;
+        padding: 1.5vw 4vw;
+        margin: 4vw auto;
 
         box-sizing: border-box;
 
@@ -51,7 +53,7 @@ schedule-course {
         .flex-wrap(wrap);
         .justify-content(center);
         .align-content(center);
-        .align-items(flex-start);
+        .align-items(center);
 
 
         &.title-day {
@@ -59,10 +61,13 @@ schedule-course {
             color: @color-yellow;
             text-align: center;
             padding: 1vw 0vw;
-            font-size: 1.2em;
+            font-size: 1em;
             span {
+                position: relative;
+                top: 0.5vw;
                 -webkit-align-self: center;
                 align-self: center;
+                text-align: center;
             }
 
         }
@@ -76,6 +81,10 @@ schedule-course {
             text-align: left;
 
             font-size: 1em;
+            span {
+                position: relative;
+                top: 0.5vw;
+            }
         }
         &.lunch {
             background-color: black;
@@ -83,6 +92,10 @@ schedule-course {
             text-align: left;
 
             font-size: 1em;
+            span {
+                position: relative;
+                top: 0.5vw;
+            }
         }
 
     }
@@ -97,17 +110,17 @@ schedule-course {
         display: block;
         margin: 0vw auto;
         .flex-display(flex);
-            .flex-direction(row);
-            .flex-wrap(wrap);
-            .justify-content(flex-start);
-            .align-content(flex-start);
-            .align-items(flex-start);
+        .flex-direction(row);
+        .flex-wrap(wrap);
+        .justify-content(flex-start);
+        .align-content(flex-start);
+        .align-items(flex-start);
 
         schedule-day {
             margin: 0px;
             width: 20%;
             font-size: 3vw;
-            
+
         }
         schedule-item {
             width: 100%;

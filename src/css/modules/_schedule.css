@@ -14,13 +14,15 @@ span[color="yellow"] {
 schedule-course {
   width: 70vw;
   display: block;
-  margin: 20vw auto;
+  margin: 10vw auto;
+  margin-bottom: 0px;
 }
 schedule-course schedule-day {
   display: block;
   width: 100%;
-  margin: 30vw auto;
-  font-size: 7vw;
+  margin: 0vw auto;
+  margin-bottom: 10vw;
+  font-size: 6vw;
 }
 schedule-course schedule-item {
   display: block;
@@ -29,8 +31,8 @@ schedule-course schedule-item {
   background-color: white;
   color: black;
   width: 100%;
-  padding: 2vw 4vw;
-  margin: 3vw auto;
+  padding: 1.5vw 4vw;
+  margin: 4vw auto;
   box-sizing: border-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -48,20 +50,23 @@ schedule-course schedule-item {
   -webkit-align-content: center;
   -ms-align-content: center;
   align-content: center;
-  -webkit-align-items: flex-start;
-  -ms-align-items: flex-start;
-  align-items: flex-start;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 schedule-course schedule-item.title-day {
   background-color: black;
   color: #f7b41b;
   text-align: center;
   padding: 1vw 0vw;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 schedule-course schedule-item.title-day span {
+  position: relative;
+  top: 0.5vw;
   -webkit-align-self: center;
   align-self: center;
+  text-align: center;
 }
 schedule-course schedule-item.break {
   background-color: black;
@@ -69,11 +74,19 @@ schedule-course schedule-item.break {
   text-align: left;
   font-size: 1em;
 }
+schedule-course schedule-item.break span {
+  position: relative;
+  top: 0.5vw;
+}
 schedule-course schedule-item.lunch {
   background-color: black;
   color: #ffffff;
   text-align: left;
   font-size: 1em;
+}
+schedule-course schedule-item.lunch span {
+  position: relative;
+  top: 0.5vw;
 }
 @media (min-width: 1200px)  {
   schedule-course {

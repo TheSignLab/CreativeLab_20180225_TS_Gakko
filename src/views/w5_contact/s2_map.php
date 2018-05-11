@@ -5,8 +5,9 @@
         
         
         
-       
+       <span class="convenios">CONVENIOS</span>
         <div id="cts-convenios">
+            
             <img src="/img/map/hands1.png" class="desktop hands">
             <img src="/img/map/partners.png">
              <img src="/img/map/hands2.png" class="desktop hands">

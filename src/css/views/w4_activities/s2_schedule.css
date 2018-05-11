@@ -25,10 +25,7 @@ section[name="activitiesSchedule"] wrapper swiper div.swiper-container {
   position: relative;
   background-color: #f7b41b;
   color: black;
-  background-image: linear-gradient(to right, #333333 52%, rgba(255, 255, 255, 0) 0%);
-  background-position: bottom;
-  background-size: 10vw 1.5vw;
-  background-repeat: repeat-x;
+  background-image: none;
 }
 section[name="activitiesSchedule"] wrapper swiper .swiper-pagination-custom.toMiddle {
   bottom: auto;

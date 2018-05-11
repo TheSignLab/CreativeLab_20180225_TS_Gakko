@@ -220,8 +220,8 @@ $htmlSlide4 = '
             </div>
             <div class="swiper-paso" paso="3">
                 <div class="mobile">
-                    <img id="w2_s2_t3_e1_img" alt="Señora Cafeteria" src="/img/img-floating/w2_services/CTS_15.png">
-                    <img id="w2_s2_t3_e2_img" alt="Manzana" src="/img/img-floating/w2_services/CTS_16.png">
+                    <img id="w2_s2_t3_e1_img" alt="Manzana" src="/img/img-floating/w2_services/CTS_15.png">
+                    <img id="w2_s2_t3_e2_img" alt="Señora Cafeteria" src="/img/img-floating/w2_services/CTS_16.png">
                     <anim id="w2_s2_t3_e1_obj" alt="Curva"></anim>
                     <anim id="w2_s2_t3_e2_obj" alt="Rayitas de Señora Cafeteria"></anim>
                 </div>
@@ -229,9 +229,9 @@ $htmlSlide4 = '
             </div>
              <div class="swiper-paso" paso="4">
                 <div class="mobile">
-                    <img id="w2_s2_t4_e1_img" alt="Niños Primera Comunion" src="/img/img-floating/w2_services/CTS_17.png">
-                    <anim id="w2_s2_t4_e1_obj" alt="Cohete"></anim>
-                    <anim id="w2_s2_t4_e2_obj" alt="Rayitos de Niños"></anim>
+                    <img id="w2_s2_t4_e1_img" alt="Niños Primera Comunion" src="/img/img-floating/w2_services/CTS_18.png">
+                    <anim id="w2_s2_t4_e1_obj" alt="Rayitos de Niños"></anim>
+                    <anim id="w2_s2_t4_e2_obj" alt="Cohete"></anim>
                 </div>
                 <div class="desktop"> </div>
             </div>
