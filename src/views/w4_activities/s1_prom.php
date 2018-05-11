@@ -88,11 +88,11 @@
             <div class="swiper-paso" paso="1">
 
                 <div class="mobile">
-                    <img id="w4_s2_e1_img" alt="Globo" src="/img/img-floating/w4_activities/CTS_30.png">
-                    <anim id="w4_s2_e1_obj" alt="Birrete Animado"></anim>
+
                 </div>
                 <div class="desktop">
-
+                    <img id="w4_s2_e1_img" alt="Globo" src="/img/img-floating/w4_activities/CTS_30.png">
+                    <anim id="w4_s2_e1_obj" alt="Birrete Animado"></anim>
                 </div>
             </div>
 

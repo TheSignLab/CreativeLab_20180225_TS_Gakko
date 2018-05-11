@@ -67,6 +67,12 @@ span[color="yellow"] {
   display: inline-block;
   padding: 0px 0vw;
 }
+#w0_s3_e1_obj {
+  left: -1.5vw;
+}
+#w0_s3_e2_obj {
+  right: -1.5vw;
+}
 /*
 <anim id="w0_s1_e1_obj" description="Manitos de Precarga"></anim>
 */

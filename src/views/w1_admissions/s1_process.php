@@ -220,52 +220,68 @@ $htmlSlide5 = '
         <div class="swiper-sticky" from-swiper="admissionProcess">
 
             <div class="swiper-paso" paso="1">
-                <div class="mobile">
 
-                    <img id="w1_s2_t1_e1_img" alt="Niñas Estudiantes" src="/img/img-floating/w1_admissions/CTS_03.png">
-                    <anim id="w1_s2_t1_e2_obj" alt="Lapiz animado"></anim>
+                <img id="w1_s2_t1_e1_img" alt="Niñas Estudiantes" src="/img/img-floating/w1_admissions/CTS_03.png">
+                <anim id="w1_s2_t1_e2_obj" alt="Lapiz animado"></anim>
 
+                <div class="mobile"></div>
+                <div class="desktop">
+                    <anim id="w1_s2_t1_e1_obj" alt="Bigotes"></anim>
                 </div>
-                <div class="desktop"> </div>
             </div>
 
-            
+
             <div class="swiper-paso" paso="2">
+
+                <img id="w1_s2_t2_e1_img" alt="Utiles" src="/img/img-floating/w1_admissions/CTS_04.png">
+                <anim id="w1_s2_t2_e2_obj" alt="Cohete"></anim>
+                <anim id="w1_s2_t2_e3_obj" alt="Rayitas"></anim>
+
                 <div class="mobile">
-                    <img id="w1_s2_t2_e1_img" alt="Utiles" src="/img/img-floating/w1_admissions/CTS_04.png">
-                    <anim id="w1_s2_t2_e2_obj" alt="Cohete"></anim>
-                    <anim id="w1_s2_t2_e3_obj" alt="Rayitas"></anim>
+
                 </div>
-                <div class="desktop"> </div>
+                <div class="desktop">
+                    <anim id="w1_s2_t2_e1_obj" alt="Bigotes"></anim>
+                </div>
             </div>
-            
-            
+
+
             <div class="swiper-paso" paso="3">
+                <img id="w1_s2_t3_e1_img" alt="Niña libros" src="/img/img-floating/w1_admissions/CTS_05.png">
+                <anim id="w1_s2_t3_e2_obj" alt="Birrete animado"></anim>
                 <div class="mobile">
-                    <img id="w1_s2_t3_e1_img" alt="Niña libros" src="/img/img-floating/w1_admissions/CTS_05.png">
-                    <anim id="w1_s2_t3_e2_obj" alt="Birrete animado"></anim>
+
                 </div>
-                <div class="desktop"> </div>
+                <div class="desktop">
+                    <anim id="w1_s2_t3_e1_obj" alt="Bigotes"></anim>
+                </div>
             </div>
-            
-            
-            
+
+
+
             <div class="swiper-paso" paso="4">
+                <img id="w1_s2_t4_e1_img" alt="Niño Grande" src="/img/img-floating/w1_admissions/CTS_06.png">
+                <img id="w1_s2_t4_e2_img" alt="Niña Grande" src="/img/img-floating/w1_admissions/CTS_07.png">
+                <anim id="w1_s2_t4_e2_obj" alt="Lapiz animado"></anim>
+                <anim id="w1_s2_t4_e1_obj" alt="Bigotes animado"></anim>
                 <div class="mobile">
-                    <img id="w1_s2_t4_e1_img" alt="Niño Grande" src="/img/img-floating/w1_admissions/CTS_06.png">
-                    <img id="w1_s2_t4_e2_img" alt="Niña Grande" src="/img/img-floating/w1_admissions/CTS_07.png">
-                    <anim id="w1_s2_t4_e2_obj" alt="Lapiz animado"></anim>
-                    <anim id="w1_s2_t4_e1_obj" alt="Bigotes animado"></anim>
+
                 </div>
-                <div class="desktop"> </div>
+                <div class="desktop">
+                    <anim id="w1_s2_t4_e3_obj" alt="Avion de Papel"></anim>
+                </div>
             </div>
             <div class="swiper-paso" paso="5">
+                <img id="w1_s2_t5_e1_img" alt="Niño Feliz" src="/img/img-floating/w1_admissions/CTS_08.png">
+                <anim id="w1_s2_t5_e1_obj" alt="Hojas animado"></anim>
+                <anim id="w1_s2_t5_e2_obj" alt="Rayitas animado"></anim>
                 <div class="mobile">
-                    <img id="w1_s2_t5_e1_img" alt="Niño Feliz" src="/img/img-floating/w1_admissions/CTS_08.png">
-                    <anim id="w1_s2_t5_e1_obj" alt="Hojas animado"></anim>
-                    <anim id="w1_s2_t5_e2_obj" alt="Rayitas animado"></anim>
+
+
                 </div>
-                <div class="desktop"> </div>
+                <div class="desktop">
+                    <anim id="w1_s2_t5_e3_obj" alt="Curva animada"></anim>
+                </div>
             </div>
         </div>
 

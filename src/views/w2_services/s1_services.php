@@ -202,36 +202,40 @@ $htmlSlide4 = '
         <div class="swiper-sticky" from-swiper="services">
 
             <div class="swiper-paso" paso="1">
-                <div class="mobile">
-                    <img id="w2_s2_t1_e1_img" alt="Coordinador" src="/img/img-floating/w2_services/CTS_11.png">
+                <img id="w2_s2_t1_e1_img" alt="Coordinador" src="/img/img-floating/w2_services/CTS_11.png">
                     <img id="w2_s2_t1_e2_img" alt="Psicologa" src="/img/img-floating/w2_services/CTS_12.png">
                     <anim id="w2_s2_t1_e1_obj" alt="Rayitas de Psicologa"></anim>
+                <div class="mobile">
+                    
                 </div>
                 <div class="desktop"> </div>
             </div>
 
             <div class="swiper-paso" paso="2">
-                <div class="mobile">
-                    <img id="w2_s2_t2_e1_img" alt="Niña Biblioteca" src="/img/img-floating/w2_services/CTS_13.png">
+                  <img id="w2_s2_t2_e1_img" alt="Niña Biblioteca" src="/img/img-floating/w2_services/CTS_13.png">
                     <img id="w2_s2_t2_e2_img" alt="Libros" src="/img/img-floating/w2_services/CTS_14.png">
                     <anim id="w2_s2_t2_e1_obj" alt="Birrete animado"></anim>
+                <div class="mobile">
+                  
                 </div>
                 <div class="desktop"> </div>
             </div>
             <div class="swiper-paso" paso="3">
-                <div class="mobile">
-                    <img id="w2_s2_t3_e1_img" alt="Manzana" src="/img/img-floating/w2_services/CTS_15.png">
+                  <img id="w2_s2_t3_e1_img" alt="Manzana" src="/img/img-floating/w2_services/CTS_15.png">
                     <img id="w2_s2_t3_e2_img" alt="Señora Cafeteria" src="/img/img-floating/w2_services/CTS_16.png">
                     <anim id="w2_s2_t3_e1_obj" alt="Curva"></anim>
                     <anim id="w2_s2_t3_e2_obj" alt="Rayitas de Señora Cafeteria"></anim>
+                <div class="mobile">
+                  
                 </div>
                 <div class="desktop"> </div>
             </div>
              <div class="swiper-paso" paso="4">
-                <div class="mobile">
-                    <img id="w2_s2_t4_e1_img" alt="Niños Primera Comunion" src="/img/img-floating/w2_services/CTS_18.png">
+                 <img id="w2_s2_t4_e1_img" alt="Niños Primera Comunion" src="/img/img-floating/w2_services/CTS_18.png">
                     <anim id="w2_s2_t4_e1_obj" alt="Rayitos de Niños"></anim>
                     <anim id="w2_s2_t4_e2_obj" alt="Cohete"></anim>
+                <div class="mobile">
+                    
                 </div>
                 <div class="desktop"> </div>
             </div>

@@ -75,11 +75,13 @@
         <div class="swiper-sticky">
     
                 <div class="mobile">
-                    <anim id="w2_s3_e3_obj" alt="Birrete"></anim>
+                   
+                </div>
+                <div class="desktop">
+             <anim id="w2_s3_e3_obj" alt="Birrete"></anim>
                     <anim id="w2_s3_e6_obj" alt="Manzana"></anim>
                   
-                </div>
-                <div class="desktop"> </div>
+            </div>
            
         </div>
 

@@ -579,23 +579,26 @@ section-title.small:after {
     color: #f7b41b;
   }
   section.cover cover-subtitle {
+    display: block;
     width: 41vw;
     font-size: 3vw;
     text-align: center;
     font-family: font-cat;
     color: #ffffff;
     margin: 0 auto;
-    display: block;
+    position: relative;
+    top: -1vw;
   }
   section-title {
     display: block;
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 0vw;
-    padding-top: 0vw;
+    padding-top: 11.25vw;
   }
   section-title h2 {
-    font-size: 5vw;
+    margin-top: 0vw;
+    font-size: 4vw;
     padding-top: 0vw;
     letter-spacing: 0.1vw;
   }
@@ -614,6 +617,8 @@ section-title.small:after {
     width: 100%;
     height: 2.5vw;
     content: "";
+    top: -1vw;
+    position: relative;
   }
   section-title.small:after {
     background-image: url(../../img/underlines/underline_small.svg);
@@ -864,7 +869,7 @@ swiper[swiper-type="swiper-photo"] {
 swiper[swiper-type="swiper-photo"] wrapper-img {
   display: block;
   width: 100%;
-  height: 100vw;
+  height: 65vh;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 0;
@@ -877,7 +882,7 @@ swiper[swiper-type="swiper-photo"] wrapper-img img {
   display: block;
   height: 100%;
   position: relative;
-  left: -40%;
+  left: -50%;
 }
 swiper[swiper-type="swiper-photo"] .swiper-buttons {
   top: -3.5vw;
@@ -917,49 +922,62 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
 @media (min-width: 1200px)  {
   swiper {
     width: 85vw;
+    margin-top: 5.5vw;
   }
-  div.swiper-container {
-    min-height: 50vh;
+  swiper div.swiper-container {
+    min-height: 0vh;
     border-top: 0.3vw solid #000000;
     overflow-y: hidden;
     background-color: #f7b41b;
     color: black;
-    background-image: linear-gradient(to right, #333333 52%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to right, #333333 44%, rgba(255, 255, 255, 0) 0%);
     background-position: bottom;
-    background-size: 10vw 1.5vw;
+    background-size: 4vw 0.4vw;
     background-repeat: repeat-x;
   }
-  .swiper-pagination tab {
+  swiper .swiper-pagination tab {
     background-color: white;
-    padding: 1vw 2.25vw;
-    margin: 0vw 1.5vw;
+    padding: 0.7vw 1.6vw;
+    margin: 0vw 1.1vw;
     line-height: 100%;
     color: black;
     border: .25vw solid black;
   }
-  .swiper-pagination tab.active {
+  swiper .swiper-pagination tab.active {
     background-color: black;
     color: white;
   }
-  .swiper-pagination tab span {
-    font-size: 3vw;
+  swiper .swiper-pagination tab span {
+    font-size: 2.2vw;
     top: 0.25vw;
   }
-  .slide-title-1,
-  .slide-title-2 {
+  swiper .swiper-pagination-custom.toTop {
+    bottom: auto;
+    top: -10vw;
+    left: 0;
+    z-index: 50;
+  }
+  swiper .swiper-pagination-custom.toMiddle {
+    bottom: auto;
+    top: -2.9vw;
+    left: 0;
+    z-index: 50;
+  }
+  swiper .slide-title-1,
+  swiper .slide-title-2 {
     padding: 0vw 0.5vw;
     padding-top: 0.65vw;
     margin-top: 0vw;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
   }
-  .slide-content {
-    width: 90%;
-    padding: 0px 1vw;
-    margin: 2vw auto;
-    font-size: 1.7vw;
+  swiper .slide-content {
+    width: 85%;
+    padding: 0vw;
+    margin: 2vw 0vw;
+    font-size: 1.4vw;
     text-align: left;
   }
-  .swiper-slide {
+  swiper .swiper-slide {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: -ms-flex;
@@ -980,8 +998,10 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
     -ms-align-items: flex-start;
     align-items: flex-start;
   }
-  column {
+  swiper column {
+    padding: 4vw 0vw 0vw 7vw;
     width: 50%;
+    box-sizing: border-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: -ms-flex;
@@ -1002,24 +1022,27 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
     -ms-align-items: center;
     align-items: center;
   }
-  ul.checklist {
-    width: 70%;
+  swiper column:last-child {
+    padding: 4vw 0vw 2vw 0vw;
+  }
+  swiper ul.checklist {
+    width: 65%;
     height: auto;
     padding-top: 0vw;
     margin: 0 auto;
   }
-  ul.checklist li.item {
+  swiper ul.checklist li.item {
     padding-bottom: 1vw;
     margin-bottom: 1vw;
-    border-bottom: 0.12vw solid black;
+    border-bottom: 0.1vw solid black;
     left: 0.0em;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
   }
-  ul.checklist li.item span.f-bold {
+  swiper ul.checklist li.item span.f-bold {
     font-size: 1em;
     display: inline;
   }
-  ul.checklist li.item:before {
+  swiper ul.checklist li.item:before {
     display: inline-block;
     width: 1em;
     margin-left: -1.2em;
@@ -1028,7 +1051,7 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
     content: url('/img/checklist/checkmark.svg');
     position: relative;
   }
-  ul.checklist .swiper-buttons {
+  swiper ul.checklist .swiper-buttons {
     top: -3.5vw;
     z-index: 50;
     position: relative;
@@ -1052,10 +1075,69 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
     -ms-align-items: center;
     align-items: center;
   }
-  ul.checklist .swiper-buttonPrev,
-  ul.checklist .swiper-buttonNext {
+  swiper ul.checklist .swiper-buttonPrev,
+  swiper ul.checklist .swiper-buttonNext {
     width: 3vw;
     height: 3vw;
+    display: block;
+    background-color: white;
+  }
+  swiper[swiper-type="swiper-photo"] {
+    padding-bottom: 0vw;
+    margin-bottom: 0vw;
+  }
+  swiper[swiper-type="swiper-photo"] wrapper-img {
+    display: block;
+    width: 100%;
+    height: 65vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+    border: 1vw solid black;
+    border-top: none;
+    background: none;
+    background-color: #f7b41b;
+  }
+  swiper[swiper-type="swiper-photo"] wrapper-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -50%;
+    left: 0%;
+  }
+  swiper[swiper-type="swiper-photo"] .swiper-buttons {
+    top: -3.5vw;
+    z-index: 50;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    height: auto;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  swiper[swiper-type="swiper-photo"] .swiper-buttonPrev,
+  swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
+    width: 8vw;
+    height: 8vw;
     display: block;
     background-color: white;
   }
@@ -1471,6 +1553,8 @@ timeline-desktop column {
   width: calc(49%);
   height: 100%;
   float: left;
+  padding: 0px;
+  margin: 0px;
 }
 timeline-desktop column.line {
   width: calc(1px);
@@ -1493,6 +1577,8 @@ timeline-desktop column.line {
   -ms-flex-align: center;
   align-items: center;
   z-index: 100;
+  padding: 0px !important;
+  margin: 0px;
 }
 timeline-desktop column.left item {
   display: -webkit-flex;
@@ -1896,6 +1982,12 @@ schedule-course schedule-item.lunch span {
   display: inline-block;
   padding: 0px 0vw;
 }
+#w0_s3_e1_obj {
+  left: -1.5vw;
+}
+#w0_s3_e2_obj {
+  right: -1.5vw;
+}
 /*
 <anim id="w0_s1_e1_obj" description="Manitos de Precarga"></anim>
 */
@@ -2070,6 +2162,224 @@ schedule-course schedule-item.lunch span {
   width: 17vw;
   left: 20vw;
 }
+@media (min-width: 1200px)  {
+  #w1_s2_t1_e1_img[alt="Niñas Estudiantes"] {
+    position: absolute;
+    top: auto;
+    bottom: 0.5vw;
+    width: 22vw;
+    margin: 0 auto;
+    display: block;
+    left: 1.5vw;
+    z-index: 100;
+  }
+  #w1_s2_t1_e2_obj[alt="Lapiz animado"] {
+    position: absolute;
+    top: auto;
+    bottom: 1vw;
+    width: 29vw;
+    margin: 0 auto;
+    display: block;
+    right: 4vw;
+    z-index: 100;
+  }
+  #w1_s2_t1_e1_obj[alt="Bigotes"] {
+    position: absolute;
+    top: auto;
+    bottom: 21vw;
+    width: 4vw;
+    margin: 0 auto;
+    display: block;
+    left: 7.7vw;
+    z-index: 100;
+  }
+  #w1_s2_t2_e1_img[alt="Utiles"] {
+    position: absolute;
+    top: auto;
+    bottom: 2vw;
+    width: 18vw;
+    margin: 0 auto;
+    display: block;
+    left: 62.7vw;
+    z-index: 100;
+  }
+  #w1_s2_t2_e1_obj[alt="Bigotes"] {
+    position: absolute;
+    top: auto;
+    bottom: 9vw;
+    width: 4.5vw;
+    margin: 0 auto;
+    display: block;
+    left: 4.7vw;
+    z-index: 100;
+  }
+  #w1_s2_t2_e2_obj[alt="Cohete"] {
+    position: absolute;
+    top: auto;
+    bottom: 4vw;
+    width: 35vw;
+    margin: 0 auto;
+    display: block;
+    right: 69vw;
+    z-index: 100;
+  }
+  #w1_s2_t2_e3_obj[alt="Rayitas"] {
+    position: absolute;
+    top: auto;
+    bottom: 11vw;
+    width: 5.5vw;
+    margin: 0 auto;
+    display: block;
+    right: 12vw;
+    z-index: 100;
+  }
+  #w1_s2_t3_e1_img[alt="Niña libros"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 25vw;
+    margin: 0 auto;
+    display: block;
+    left: 8vw;
+    z-index: 100;
+  }
+  #w1_s2_t3_e1_obj[alt="Bigotes"] {
+    position: absolute;
+    top: auto;
+    bottom: 19vw;
+    width: 25vw;
+    margin: 0 auto;
+    display: block;
+    right: 8vw;
+    z-index: 100;
+  }
+  #w1_s2_t3_e2_obj[alt="Birrete animado"] {
+    position: absolute;
+    top: auto;
+    bottom: 35vw;
+    width: 25vw;
+    margin: 0 auto;
+    display: block;
+    right: 8vw;
+    z-index: 100;
+  }
+  #w1_s2_t4_e1_img[alt="Niño Grande"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 44vw;
+    margin: 0 auto;
+    display: block;
+    left: 5vw;
+    z-index: 100;
+  }
+  #w1_s2_t4_e2_img[alt="Niña Grande"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 20vw;
+    margin: 0 auto;
+    display: block;
+    right: 6vw;
+    z-index: 100;
+  }
+  #w1_s2_t4_e2_obj[alt="Lapiz animado"] {
+    position: absolute;
+    top: auto;
+    bottom: 10vw;
+    width: 20vw;
+    margin: 0 auto;
+    display: block;
+    right: calc(16.5vw);
+    z-index: 100;
+  }
+  #w1_s2_t4_e1_obj[alt="Bigotes animado"] {
+    position: absolute;
+    top: auto;
+    bottom: 40vw;
+    width: 20vw;
+    margin: 0 auto;
+    display: block;
+    right: calc(41.5vw);
+    z-index: 100;
+  }
+  #w1_s2_t4_e3_obj[alt="Avion de Papel"] {
+    position: absolute;
+    top: auto;
+    bottom: 15vw;
+    width: 20vw;
+    margin: 0 auto;
+    display: block;
+    right: calc(41.5vw);
+    z-index: 100;
+  }
+  #w1_s2_t5_e1_img[alt="Niño Feliz"] {
+    position: absolute;
+    top: auto;
+    bottom: 5vw;
+    width: 5vw;
+    margin: 0 auto;
+    display: block;
+    right: 5vw;
+    z-index: 100;
+  }
+  #w1_s2_t5_e1_obj[alt="Hojas animado"] {
+    position: absolute;
+    top: auto;
+    bottom: 5vw;
+    width: 5vw;
+    margin: 0 auto;
+    display: block;
+    left: 8vw;
+    z-index: 100;
+  }
+  #w1_s2_t5_e2_obj[alt="Rayitas animado"] {
+    position: absolute;
+    top: auto;
+    bottom: 5vw;
+    width: 5vw;
+    margin: 0 auto;
+    display: block;
+    left: 1vw;
+    z-index: 100;
+  }
+  #w1_s2_t5_e3_obj[alt="Curva animada"] {
+    position: absolute;
+    top: auto;
+    bottom: 5vw;
+    width: 5vw;
+    margin: 0 auto;
+    display: block;
+    left: 3vw;
+    z-index: 100;
+  }
+  #w1_s3_e1_img[alt="Niños de Contacto"] {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 5vw;
+    width: 79vw;
+    left: calc(10vw);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 82vw;
+    background-image: url(/img/img-floating/CTS_09_bg.png);
+  }
+  #w1_s3_e1_obj[alt="Lapiz"] {
+    display: block;
+    position: absolute;
+    bottom: 1vw;
+    width: 27vw;
+    right: 3vw;
+  }
+  #w1_s3_e3_obj[alt="Bigotes"] {
+    display: block;
+    position: absolute;
+    bottom: 18vw;
+    width: 17vw;
+    left: 20vw;
+  }
+}
 /**
  *  Filename : anim_w3_about.less
  *  Preprocessor : LESS
@@ -2225,6 +2535,158 @@ schedule-course schedule-item.lunch span {
   display: block;
   right: 50vw;
   z-index: 100;
+}
+@media (min-width: 1200px)  {
+  #w2_s2_t1_e1_img[alt="Coordinador"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 44vw;
+    margin: 0 auto;
+    display: block;
+    left: 3vw;
+    z-index: 100;
+  }
+  #w2_s2_t1_e2_img[alt="Psicologa"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 48vw;
+    margin: 0 auto;
+    display: block;
+    right: 8vw;
+    z-index: 100;
+  }
+  #w2_s2_t1_e1_obj[alt="Rayitas de Psicologa"] {
+    position: absolute;
+    top: auto;
+    bottom: 38vw;
+    width: 21vw;
+    margin: 0 auto;
+    display: block;
+    right: 40vw;
+    z-index: 100;
+  }
+  #w2_s2_t2_e1_img[alt="Niña Biblioteca"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 41vw;
+    margin: 0 auto;
+    display: block;
+    left: 2vw;
+    z-index: 100;
+  }
+  #w2_s2_t2_e2_img[alt="Libros"] {
+    position: absolute;
+    top: auto;
+    bottom: 60vw;
+    width: 30vw;
+    margin: 0 auto;
+    display: block;
+    right: 9vw;
+    z-index: 100;
+  }
+  #w2_s2_t2_e1_obj[alt="Birrete animado"] {
+    position: absolute;
+    top: auto;
+    bottom: 98vw;
+    width: 36vw;
+    margin: 0 auto;
+    display: block;
+    right: 17vw;
+    z-index: 100;
+  }
+  #w2_s2_t3_e1_img[alt="Manzana"] {
+    position: absolute;
+    top: auto;
+    bottom: 65vw;
+    width: 15vw;
+    margin: 0 auto;
+    display: block;
+    right: 73vw;
+    z-index: 100;
+  }
+  #w2_s2_t3_e2_img[alt="Señora Cafeteria"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 46vw;
+    margin: 0 auto;
+    display: block;
+    right: 10vw;
+    z-index: 100;
+  }
+  #w2_s2_t3_e1_obj[alt="Curva"] {
+    position: absolute;
+    top: auto;
+    bottom: 17vw;
+    width: 17vw;
+    margin: 0 auto;
+    display: block;
+    right: 65vw;
+    z-index: 100;
+  }
+  #w2_s2_t3_e2_obj[alt="Rayitas de Señora Cafeteria"] {
+    position: absolute;
+    top: auto;
+    bottom: 71vw;
+    width: 27vw;
+    margin: 0 auto;
+    display: block;
+    right: 16vw;
+    z-index: 100;
+  }
+  #w2_s2_t4_e1_img[alt="Niños Primera Comunion"] {
+    position: absolute;
+    top: auto;
+    bottom: 0vw;
+    width: 61vw;
+    margin: 0 auto;
+    display: block;
+    right: calc(19.5vw);
+    z-index: 100;
+  }
+  #w2_s2_t4_e1_obj[alt="Rayitos de Niños"] {
+    position: absolute;
+    top: auto;
+    bottom: 75vw;
+    width: 28vw;
+    margin: 0 auto;
+    display: block;
+    right: 39vw;
+    z-index: 100;
+  }
+  #w2_s2_t4_e2_obj[alt="Cohete"] {
+    position: absolute;
+    top: auto;
+    bottom: 82vw;
+    width: 47vw;
+    margin: 0 auto;
+    display: block;
+    right: calc(35vw);
+    z-index: 100;
+  }
+  #w2_s3_e3_obj[alt="Birrete"] {
+    position: absolute;
+    top: auto;
+    bottom: 20vw;
+    width: 15vw;
+    margin: 0 auto;
+    display: block;
+    right: 50vw;
+    z-index: 100;
+  }
+  #w2_s3_e6_obj[alt="Manzana"] {
+    position: absolute;
+    top: auto;
+    bottom: 20vw;
+    width: 15vw;
+    margin: 0 auto;
+    display: block;
+    right: 50vw;
+    z-index: 100;
+  }
 }
 /**
  *  Filename : anim_w3_about.less
@@ -2549,8 +3011,8 @@ desktop-nav wrapper nav-header {
   display: block;
   margin: 0vw 0vw;
   margin-left: 5vw;
-  width: 8vw;
-  height: 12vw;
+  width: 7vw;
+  height: 11vw;
   top: 0px;
   z-index: 100;
   position: fixed;
@@ -2918,19 +3380,19 @@ section.cover[name="contactCover"] wrapper {
 @media (min-width: 1200px)  {
   section.cover img[img-left] {
     display: block;
-    width: 40vw;
+    width: 33vw;
     height: auto;
     position: absolute;
-    left: -5vw;
-    top: calc(44.8533vh);
+    left: -9vw;
+    top: calc(44.8789725vh);
   }
   section.cover img[img-right] {
     display: block;
-    width: 40vw ;
+    width: 33vw ;
     height: auto;
     position: absolute;
-    right: -5vw;
-    top: calc(44.8533vh);
+    right: -9vw;
+    top: calc(44.8789725vh);
   }
 }
 /**
@@ -3140,9 +3602,12 @@ section[name="home35Years"] section-menu item {
     height: 100vh;
     background-color: #000000;
   }
+  section[name="home35Years"] cover-title {
+    width: 100%;
+  }
   section[name="home35Years"] h1 {
-    width: 70%;
-    font-size: 5vw;
+    width: 65%;
+    font-size: 7vw;
     padding-top: 0vh;
     /* El span de  " 35 Años " */
   }
@@ -3229,6 +3694,42 @@ section[name="admissionProcess"] [swiper-name="admissionProcess"] div.swiper-con
   background-color: #f7b41b;
   color: black;
 }
+@media (min-width: 1200px)  {
+  section[name="admissionProcess"] wrapper {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  section[name="admissionProcess"] wrapper [swiper-name="admissionProcess"] {
+    padding-bottom: 0vh;
+    margin-bottom: 0vh;
+  }
+  section[name="admissionProcess"] wrapper [swiper-name="admissionProcess"] .swiper-container {
+    padding: 0px;
+    margin: 0px;
+  }
+}
 /**
  *  Filename : _contactForm.less
  *  Preprocessor : LESS
@@ -3251,12 +3752,12 @@ section[name="servicesServices"] wrapper {
   color: black;
 }
 section[name="servicesServices"] swiper[swiper-name="services"] {
-  padding-bottom: 70vw;
+  padding-bottom: 0vw;
 }
 section[name="servicesServices"] swiper[swiper-name="services"] .swiper-container {
   background-color: #ffffff;
   color: black;
-  padding-bottom: 15vw;
+  padding-bottom: 0vw;
 }
 section[name="servicesServices"] swiper[swiper-name="services"] .swiper-container .slide-title-1 {
   background-color: black;
@@ -3307,6 +3808,12 @@ section[name="aboutTimeline"] section-title {
   section[name="aboutTimeline"] {
     background-color: #000000;
     color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+  }
+  section[name="aboutTimeline"] wrapper {
+    width: 100vw;
+    height: 100vh;
   }
 }
 /**
@@ -3417,7 +3924,6 @@ section[name="activitiesSchedule"] wrapper {
 }
 section[name="activitiesSchedule"] wrapper swiper div.swiper-container {
   height: auto;
-  min-height: 50vh;
   display: block;
   margin: 0 auto;
   box-sizing: border-box;
@@ -3653,7 +4159,7 @@ section[name="contactMap"] {
   display: block;
 }
 section[name="contactMap"] wrapper {
-  height: 100%;
+  height: auto;
 }
 section[name="contactMap"] span.convenios {
   background-color: #000000;

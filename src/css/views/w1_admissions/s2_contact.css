@@ -5,12 +5,6 @@
  *  Update : 03/05/18
  *
 **/
-mobile-nav {
-  display: block;
-}
-desktop-nav {
-  display: none;
-}
 span[color="white"] {
   color: #ffffff;
 }

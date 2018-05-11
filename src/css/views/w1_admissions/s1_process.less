@@ -46,3 +46,36 @@ section[name="admissionProcess"] {
         color: black;
     }
 }
+
+
+@media @query-macbook {
+    section[name="admissionProcess"] {
+
+        wrapper {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+            .flex-display(flex);
+            .flex-direction(column);
+            .flex-wrap(wrap);
+            .justify-content(flex-start);
+            .align-content(center);
+            .align-items(center);
+            [swiper-name="admissionProcess"] {
+                padding-bottom: 0vh;
+                margin-bottom: 0vh;
+                .swiper-container {
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+
+
+
+        }
+
+
+    }
+}

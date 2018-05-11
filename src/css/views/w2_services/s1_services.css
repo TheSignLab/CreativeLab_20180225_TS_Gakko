@@ -7,12 +7,6 @@
  *  Update : 03/05/18
  *
 **/
-mobile-nav {
-  display: block;
-}
-desktop-nav {
-  display: none;
-}
 span[color="white"] {
   color: #ffffff;
 }
@@ -24,12 +18,12 @@ section[name="servicesServices"] wrapper {
   color: black;
 }
 section[name="servicesServices"] swiper[swiper-name="services"] {
-  padding-bottom: 70vw;
+  padding-bottom: 0vw;
 }
 section[name="servicesServices"] swiper[swiper-name="services"] .swiper-container {
   background-color: #ffffff;
   color: black;
-  padding-bottom: 15vw;
+  padding-bottom: 0vw;
 }
 section[name="servicesServices"] swiper[swiper-name="services"] .swiper-container .slide-title-1 {
   background-color: black;

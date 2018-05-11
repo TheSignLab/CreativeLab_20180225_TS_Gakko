@@ -34,5 +34,11 @@ section[name="aboutTimeline"] section-title {
   section[name="aboutTimeline"] {
     background-color: #000000;
     color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+  }
+  section[name="aboutTimeline"] wrapper {
+    width: 100vw;
+    height: 100vh;
   }
 }

@@ -36,12 +36,12 @@
             </column>
 
         </form>
-
+        <img src="/img/img-floating/CTS_09.png" id="w1_s3_e1_img" alt="Niños de Contacto">
+        <anim id="w1_s3_e1_obj" alt="Lapiz"></anim>
+        <anim id="w1_s3_e3_obj" alt="Bigotes"></anim>
         <div class="mobile">
 
-            <img src="/img/img-floating/CTS_09.png" id="w1_s3_e1_img" alt="Niños de Contacto">
-            <anim id="w1_s3_e1_obj" alt="Lapiz"></anim>
-            <anim id="w1_s3_e3_obj" alt="Bigotes"></anim>
+
 
         </div>
         <div class="desktop">

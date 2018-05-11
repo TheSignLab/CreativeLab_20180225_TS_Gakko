@@ -59,6 +59,8 @@ timeline-desktop column {
   width: calc(49%);
   height: 100%;
   float: left;
+  padding: 0px;
+  margin: 0px;
 }
 timeline-desktop column.line {
   width: calc(1px);
@@ -81,6 +83,8 @@ timeline-desktop column.line {
   -ms-flex-align: center;
   align-items: center;
   z-index: 100;
+  padding: 0px !important;
+  margin: 0px;
 }
 timeline-desktop column.left item {
   display: -webkit-flex;

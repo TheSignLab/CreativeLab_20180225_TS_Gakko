@@ -16,7 +16,6 @@ section[name="activitiesSchedule"] wrapper {
 }
 section[name="activitiesSchedule"] wrapper swiper div.swiper-container {
   height: auto;
-  min-height: 50vh;
   display: block;
   margin: 0 auto;
   box-sizing: border-box;

@@ -18,7 +18,7 @@ section[name="contactMap"] {
   display: block;
 }
 section[name="contactMap"] wrapper {
-  height: 100%;
+  height: auto;
 }
 section[name="contactMap"] span.convenios {
   background-color: #000000;

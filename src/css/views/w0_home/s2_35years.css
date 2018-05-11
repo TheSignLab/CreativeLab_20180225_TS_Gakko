@@ -163,9 +163,12 @@ section[name="home35Years"] section-menu item {
     height: 100vh;
     background-color: #000000;
   }
+  section[name="home35Years"] cover-title {
+    width: 100%;
+  }
   section[name="home35Years"] h1 {
-    width: 70%;
-    font-size: 5vw;
+    width: 65%;
+    font-size: 7vw;
     padding-top: 0vh;
     /* El span de  " 35 Años " */
   }

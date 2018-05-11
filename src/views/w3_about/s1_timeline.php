@@ -272,7 +272,7 @@ implementación de un sistema de gestión de la calidad.">
                     <item class="empty"></item>
                     <item k="9" year="2016" class="hidden">
                         <item-title>
-                            <h3 class="fc-yellow f-cat">GETIONAMOS LA CALIDAD</h3>
+                            <h3 class="fc-yellow f-cat">GESTIONAMOS LA CALIDAD</h3>
                             <img src="img/underlines/underline.png">
                         </item-title>
                         <item-content>

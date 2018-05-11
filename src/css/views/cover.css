@@ -93,18 +93,18 @@ section.cover[name="contactCover"] wrapper {
 @media (min-width: 1200px)  {
   section.cover img[img-left] {
     display: block;
-    width: 40vw;
+    width: 33vw;
     height: auto;
     position: absolute;
-    left: -5vw;
-    top: calc(44.8533vh);
+    left: -9vw;
+    top: calc(44.8789725vh);
   }
   section.cover img[img-right] {
     display: block;
-    width: 40vw ;
+    width: 33vw ;
     height: auto;
     position: absolute;
-    right: -5vw;
-    top: calc(44.8533vh);
+    right: -9vw;
+    top: calc(44.8789725vh);
   }
 }

@@ -92,6 +92,8 @@ section-title.small:after {
 
 @media @query-macbook {
 
+
+
     section.cover {
         cover-title {
             display: block;
@@ -103,7 +105,6 @@ section-title.small:after {
             font-family: font-med-condensed;
             color: #f7b41b;
         }
-
         cover-subtitle {
             display: block;
             width: 41vw;
@@ -112,9 +113,16 @@ section-title.small:after {
             font-family: font-cat;
             color: @color-white;
             margin: 0 auto;
-            display: block;
+
+            position: relative;
+            top: -1vw;
         }
     }
+
+
+
+
+
 
 
     section-title {
@@ -122,9 +130,10 @@ section-title.small:after {
         width: fit-content;
         margin: 0 auto;
         margin-bottom: 0vw;
-        padding-top: 0vw;
+        padding-top:11.25vw;
         h2 {
-            font-size: 5vw;
+            margin-top: 0vw;
+            font-size: 4vw;
             padding-top: 0vw;
             letter-spacing: 0.1vw;
 
@@ -137,8 +146,6 @@ section-title.small:after {
         }
     }
 
-
-
     section-title:after {
         background-image: url(../../img/underlines/underline.svg);
         background-size: 100%;
@@ -148,6 +155,8 @@ section-title.small:after {
         width: 100%;
         height: 2.5vw;
         content: "";
+        top: -1vw;
+        position: relative;
 
     }
 
