@@ -1,0 +1,61 @@
+/**
+ *  Filename : w0_home.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../base/_mediaQueries.less";
+@import "../base/_vars.less";
+
+@import "w0_home/s0_loader.less";
+@import "w0_home/s1_logo.less";
+@import "w0_home/s2_35years.less";
+
+
+// ----------------------------------------- // 
+// iPhone and Smartphones
+// ----------------------------------------- // 
+@media @query-iphone {
+
+    // Home //
+    route[name="home"] {
+
+        section[name="homeLoader"] {
+
+            display: block;
+
+            width: 100vw;
+            height: 100vh;
+
+            background-color: @color-black;
+
+
+        }
+        section[name="homeLogo"] {
+
+            display: block;
+
+            width: 100vw;
+            height: 100vh;
+
+            background-color: @color-yellow;
+
+        }
+        section[name="home35Years"] {
+
+            display: block;
+
+            width: 100vw;
+            height: 100vh;
+
+            background-color: @color-black;
+            background-image: url("../../img/covers/CTS_01.jpg");
+            background-size: cover;
+            background-position: center center;
+
+        }
+    }
+
+}

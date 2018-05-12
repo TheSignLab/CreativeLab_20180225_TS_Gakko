@@ -1,0 +1,369 @@
+{
+    "name": "Horarios CTS",
+    "version": 2.0,
+    "courses": [{
+            "course": "KINDER",
+            "type": "Primaria",
+            "days": [{
+                "day": 1,
+                "classes": ["CIENCIAS", "CIENCIAS", "MATEMÁTICAS", "MATEMÁTICAS", "INFORMÁTICA", "INGLÉS SPE - LIS"]
+			}, {
+                "day": 2,
+                "classes": ["ESPAÑOL", "ED. FÍSICA", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "DANZAS", "EMPRENDIMIENTO"]
+			}, {
+                "day": 3,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "INGLÉS SPE-LIS", "CIENCIAS", "CIENCIAS", "RELIGIÓN"]
+			}, {
+                "day": 4,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "MATEMÁTICAS", "SOCIALES", "SOCIALES", "MANUALIDADES"]
+			}, {
+                "day": 5,
+                "classes": ["SOCIALES", "SOCIALES", "MATEMÁTICAS", "MATEMÁTICAS", "INGLÉS WRI - REA", "MÚSICA"]
+			}]
+		}, {
+            "course": "TRANSICIÓN",
+            "type": "Primaria",
+            "days": [{
+                "day": 1,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "INGLÉS REA-WRI", "INGLÉS REA - WRI", "CIENCIAS", "DANZAS"]
+			}, {
+                "day": 2,
+                "classes": ["SOCIALES", "SOCIALES", "MATEMÁTICAS", "MATEMÁTICAS", "MANUALIDADES", "EMPRENDIMIENTO"]
+			}, {
+                "day": 3,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "INFORMÁTICA", "ED. FÍSICA", "CIENCIAS", "INGLÉS SPE - LIS"]
+			}, {
+                "day": 4,
+                "classes": ["LECT. COMPET.", "RELIGIÓN", "ESPAÑOL", "ESPAÑOL", "INGLÉS WRI - REA", "INGLÉS WRI - REA"]
+			}, {
+                "day": 5,
+                "classes": ["ESPAÑOL", "CIENCIAS", "SOCIALES", "SOCIALES", "MÚSICA", "MATEMÁTICAS"]
+			}]
+		}, {
+            "course": "PRIMERO",
+            "type": "Primaria",
+            "days": [{
+                "day": 1,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "CIENCIAS", "DANZAS"]
+			}, {
+                "day": 2,
+                "classes": ["SOCIALES", "SOCIALES", "MATEMÁTICAS", "MATEMÁTICAS", "MANUALIDADES", "EMPRENDIMIENTO"]
+			}, {
+                "day": 3,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "INFORMÁTICA", "ED. FÍSICA", "CIENCIAS", "INGLÉS SPE - LIS"]
+			}, {
+                "day": 4,
+                "classes": ["LECT. COMPET.", "RELIGIÓN", "ESPAÑOL", "ESPAÑOL", "ESPAÑOL", "INGLÉS WRI - REA"]
+			}, {
+                "day": 5,
+                "classes": ["ESPAÑOL", "CIENCIAS", "SOCIALES", "SOCIALES", "MÚSICA", "MATEMÁTICAS"]
+			}]
+		}, {
+            "course": "SEGUNDO",
+            "type": "Primaria",
+            "days": [{
+                "day": 1,
+                "classes": ["CIENCIAS", "CIENCIAS", "MATEMÁTICAS", "MATEMÁTICAS", "INFORMÁTICA", "INGLÉS SPE - LIS"]
+			}, {
+                "day": 2,
+                "classes": ["ESPAÑOL", "ED. FÍSICA", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "DANZAS", "EMPRENDIMIENTO"]
+			}, {
+                "day": 3,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "INGLÉS SPE - LIS", "CIENCIAS", "CIENCIAS", "RELIGIÓN"]
+			}, {
+                "day": 4,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "MATEMÁTICAS", "SOCIALES", "SOCIALES", "MANUALIDADES"]
+			}, {
+                "day": 5,
+                "classes": ["SOCIALES", "SOCIALES", "MATEMÁTICAS", "MATEMÁTICAS", "INGLÉS WRI - REA", "MÚSICA"]
+			}]
+		}, {
+            "course": "TERCERO",
+            "type": "Primaria",
+            "days": [{
+                "day": 1,
+                "classes": ["CIENCIAS", "CIENCIAS", "LECT. COMPET.", "ESPAÑOL", "ESPAÑOL", "RELIGIÓN"]
+			}, {
+                "day": 2,
+                "classes": ["INGLÉS WRI - REA", "INGLÉS WRI - REA", "LECT. COMPET.", "INFORMÁTICA", "ESPAÑOL", "ESPAÑOL"]
+			}, {
+                "day": 3,
+                "classes": ["INGLÉS SPE - LIS", "ESTADÍSTICA", "EMPRENDIMIENTO", "SOCIALES", "SOCIALES", "DANZAS"]
+			}, {
+                "day": 4,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "ÉTICA", "ED. FÍSICA", "MANUALIDADES", "MÚSICA"]
+			}, {
+                "day": 5,
+                "classes": ["INGLÉS WRI-REA", "INGLÉS WRI - REA", "LECTURA CRÍTICA", "MATEMÁTICAS", "CIENCIAS", "SOCIALES"]
+			}]
+		}, {
+            "course": "CUARTO",
+            "type": "Primaria",
+            "days": [{
+                "day": 1,
+                "classes": ["ED. FÍSICA", "DANZAS", "SOCIALES", "INFORMÁTICA", "LECTURA CRÍTICA", "CIENCIAS"]
+			}, {
+                "day": 2,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "EMPRENDIMIENTO", "ÉTICA", "INGLÉS WRI - REA", "INGLÉS WRI - REA"]
+			}, {
+                "day": 3,
+                "classes": ["MÚSICA", "INGLÉS SPE - LIS", "ESPAÑOL", "ESPAÑOL", "MANUALIDADES", "ESTADÍSTICA"]
+			}, {
+                "day": 4,
+                "classes": ["INGLÉS WRI - REA", "INGLÉS WRI - REA", "RELIGIÓN", "SOCIALES", "SOCIALES", "MATEMÁTICAS"]
+			}, {
+                "day": 5,
+                "classes": ["CIENCIAS", "CIENCIAS", "LECT. COMPET.", "LECT. COMPET.", "ESPAÑOL", "ESPAÑOL"]
+			}]
+		}, {
+            "course": "QUINTO",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["CIENCIAS", "CIENCIAS", "ESPAÑOL", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "MATEMÁTICAS", "MATEMÁTICAS"]
+			}, {
+                "day": 2,
+                "classes": ["ED. FÍSICA", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "HISTORIA", "HISTORIA", "INFORMÁTICA", "EMPRENDIMIENTO"]
+			}, {
+                "day": 3,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "ESTADÍSTICA", "DANZAS", "CIENCIAS", "LECT. COMPET.", "LECT. COMPET."]
+			}, {
+                "day": 4,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "MANUALIDADES", "CONTABILIDAD", "CONTABILIDAD", "GEOGRAFÍA", "LECTURA CRÍTICA"]
+			}, {
+                "day": 5,
+                "classes": ["RELIGIÓN", "ÉTICA", "MATEMÁTICAS", "INGLÉS SPE - LIS", "DEMOCRACIA", "MÚSICA", "INFORMÁTICA"]
+			}]
+		}, {
+            "course": "SEXTO A",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["INFORMÁTICA", "INFORMÁTICA", "GEOGRAFÍA", "DANZAS", "ED. FÍSICA", "MATEMÁTICAS", "MATEMÁTICAS"]
+			}, {
+                "day": 2,
+                "classes": ["INGLÉS WRI - REA", "INGLÉS WRI - REA", "QUÍMICA", "CONTABILIDAD", "CONTABILIDAD", "LECT. COMPET.", "ÉTICA"]
+			}, {
+                "day": 3,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "ESPAÑOL", "HISTORIA", "HISTORIA", "MANUALIDADES", "LECTURA CRÍTICA"]
+			}, {
+                "day": 4,
+                "classes": ["MATEMÁTICAS", "RELIGIÓN", "LECT. COMPET.", "INGLÉS SPE - LIS", "MÚSICA", "EMPRENDIMIENTO", "ESTADÍSTICA"]
+			}, {
+                "day": 5,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "DEMOCRACIA", "BIOLOGÍA", "BIOLOGÍA", "INGLÉS WRI - REA", "INGLÉS WRI - REA"]
+			}]
+		}, {
+            "course": "SEXTO B",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "INGLÉS SPE - LIS", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "MÚSICA", "LECTURA CRÍTICA"]
+			}, {
+                "day": 2,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "INGLÉS WRI - REA", "QUÍMICA", "ESPAÑOL", "DEMOCRACIA", "INGLÉS SPE - LIS"]
+			}, {
+                "day": 3,
+                "classes": ["INFORMÁTICA", "INFORMÁTICA", "MATEMÁTICAS", "EMPRENDIMIENTO", "DANZAS", "GEOGRAFÍA", "MANUALIDADES"]
+			}, {
+                "day": 4,
+                "classes": ["RELIGIÓN", "ESPAÑOL", "ESPAÑOL", "BIOLOGÍA", "BIOLOGÍA", "LECT. COMPET.", "LECT. COMPET."]
+			}, {
+                "day": 5,
+                "classes": ["HISTORIA", "HISTORIA", "ÉTICA", "CONTABILIDAD", "CONTABILIDAD", "ESTADÍSTICA", "ED. FÍSICA"]
+			}]
+		}, {
+            "course": "SEPTIMO A",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["CONTABILIDAD", "CONTABILIDAD", "QUÍMICA", "MATEMÁTICAS", "MATEMÁTICAS", "ESPAÑOL", "EMPRENDIMIENTO"]
+			}, {
+                "day": 2,
+                "classes": ["LECTURA CRÍTICA", "ÉTICA", "DANZAS", "MATEMÁTICAS", "INGLÉS WRI - REA", "INGLÉS WRI . REA", "DEMOCRACIA"]
+			}, {
+                "day": 3,
+                "classes": ["ED. FÍSICA", "BIOLOGÍA", "BIOLOGÍA", "ESPAÑOL", "ESPAÑOL", "INGLÉS WRI - REA", "INGLÉS WRI - REA"]
+			}, {
+                "day": 4,
+                "classes": ["INFORMÁTICA", "INFORMÁTICA", "ESTADÍSTICA", "HISTORIA", "HISTORIA", "RELIGIÓN", "INGLÉS SPE - LIS"]
+			}, {
+                "day": 5,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "INGLÉS SPE - LIS", "GEOGRAFÍA", "LECT. COMPET.", "LECT. COMPET.", "MÚSICA"]
+			}]
+		}, {
+            "course": "SEPTIMO B",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "ESTADÍSTICA", "HISTORIA", "HISTORIA", "INGLÉS SPE - LIS", "INGLÉS SPE - LIS"]
+			}, {
+                "day": 2,
+                "classes": ["CONTABILIDAD", "CONTABILIDAD", "DEMOCRACIA", "MÚSICA", "BIOLOGÍA", "BIOLOGÍA", "LECTURA CRÍTICA"]
+			}, {
+                "day": 3,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "EMPRENDIMIENTO", "INGÑÉS WRI - REA", "INGLÉS WRI - REA", "DANZAS", "ÉTICA"]
+			}, {
+                "day": 4,
+                "classes": ["ESPAÑOL", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "LECT. COMPET.", "LECT. COMPET.", "MATEMÁTICAS", "RELIGIÓN"]
+			}, {
+                "day": 5,
+                "classes": ["INFORMÁTICA", "ED. FÍSICA", "QUÍMICA", "MATEMÁTICAS", "MATEMÁTICAS", "INFORMÁTICA", "GEOGRAFÍA"]
+			}]
+		}, {
+            "course": "OCTAVO A",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["INGLÉS WRI - REA", "INGLÉS WRI - REA", "INFORMÁTICA", "ÉTICA", "RELIGIÓN", "BIOLOGÍA", "BIOLOGÍA"]
+			}, {
+                "day": 2,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "INFORMÁTICA", "ESPAÑOL", "ESPAÑOL", "MÚSICA", "HISTORIA"]
+			}, {
+                "day": 3,
+                "classes": ["QUÍMICA", "ED. FÍSICA", "INGLÉS SPE - LIS", "LECT. COMPET.", "LECT. COMPET.", "ESTADÍSTICA", "MATEMÁTICAS"]
+			}, {
+                "day": 4,
+                "classes": ["INGLÉS SPE - LIS", "EMPRENDIMIENTO", "DANZAS", "MATEMÁTICAS", "MATEMÁTICAS", "LECTURA CRÍTICA", "GEOGRAFÍA"]
+			}, {
+                "day": 5,
+                "classes": ["ESPAÑOL", "GEOGRAFÍA", "DEMOCRACIA", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "CONTABILIDAD", "CONTABILIDAD"]
+			}]
+		}, {
+            "course": "OCTAVO B",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "CONTABILIDAD", "CONTABILIDAD", "GEOGRAFÍA", "EMPRENDIMIENTO", "DANZAS"]
+			}, {
+                "day": 2,
+                "classes": ["BIOLOGÍA", "BIOLOGÍA", "ÉTICA", "LECT. COMPET.", "LECT. COMPET.", "ESTADÍSTICA", "QUÍMICA"]
+			}, {
+                "day": 3,
+                "classes": ["INGLÉS WRI - REA", "INGLÉS WRI - REA", "MÚSICA", "MATEMÁTICAS", "MATEMÁTICAS", "ESPAÑOL", "ESPAÑOL"]
+			}, {
+                "day": 4,
+                "classes": ["DEMOCRACIA", "ED. FÍSICA", "RELIGIÓN", "GEOGRAFÍA", "INGLÉS SPE - LIS", "INGLÉS SPE - LIS", "ESPAÑOL"]
+			}, {
+                "day": 5,
+                "classes": ["INGLÉS WRI - REA", "INGLÉS WRI - REA", "HISTORIA", "INFORMÁTICA", "INFORMÁTICA", "MATEMÁTICAS", "LECTURA CRÍTICA"]
+			}]
+		}, {
+            "course": "NOVENO A",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["GEOGRAFÍA", "GEOGRAFÍA", "INGLÉS WRI - REA", "LECT. COMPET.", "LECT. COMPET.", "MATEMÁTICAS", "MATEMÁTICAS"]
+			}, {
+                "day": 2,
+                "classes": ["MÚSICA", "DANZAS", "MATEMÁTICAS", "INGLÉS WRI - REA", "INFORMÁTICA", "HISTORIA", "FÍSICA"]
+			}, {
+                "day": 3,
+                "classes": ["MATEMÁTICAS", "RELIGIÓN", "INFORMÁTICA", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "QUÍMICA", "QUÍMICA"]
+			}, {
+                "day": 4,
+                "classes": ["ED. FÍSICA", "BIOLOGÍA", "BIOLOGÍA", "LECTURA CRÍTICA", "INGLÉS SPE - LIS", "ESPAÑOL", "EMPRENDIMIENTO"]
+			}, {
+                "day": 5,
+                "classes": ["CONTABILIDAD", "CONTABILIDAD", "DEMOCRACIA", "ÉTICA", "ESTADÍSTICA", "ESPAÑOL", "ESPAÑOL"]
+			}]
+		}, {
+            "course": "NOVENO B",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["LECT. COMPET.", "LECT. COMPET.", "MÚSICA", "BIOLOGÍA", "BIOLOGÍA", "INGLÉS WRI - REA", "INGLES WRI - REA"]
+			}, {
+                "day": 2,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "FÍSICA", "DEMOCRACIA", "ED. FÍSICA", "EMPRENDIMIENTO", "DANZAS"]
+			}, {
+                "day": 3,
+                "classes": ["CONTABILIDAD", "CONTABILIDAD", "ESPAÑOL", "MATEMÁTICAS", "MATEMÁTICAS", "RELIGIÓN", "INGLÉS WRI - REA"]
+			}, {
+                "day": 4,
+                "classes": ["GEOGRAFÍA", "GEOGRAFÍA", "ESTADÍSTICA", "ÉTICA", "INFORMÁTICA", "INGLÉS WRI - REA", "INFORMÁTICA"]
+			}, {
+                "day": 5,
+                "classes": ["MATEMÁTICAS", "MATEMÁTICAS", "INGLÉS SPE - LIS", "HISTORIA", "LECTURA CRÍTICA", "QUÍMICA", "QUÍMICA"]
+			}]
+		}
+                , {
+            "course": "DECIMO A",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "TRIGONOMETRÍA", "CONTABILIDAD", "CONTABILIDAD", "FILOSOFÍA", "FILOSOFÍA"]
+			}, {
+                "day": 2,
+                "classes": ["ECONOMÍA", "TRIGONOMETRÍA", "LECT. COMPET.", "DANZAS", "RELIGIÓN", "DEMOCRACIA", "LECTURA CRÍTICA"]
+			}, {
+                "day": 3,
+                "classes": ["INGLÉS SPE - LIS", "INGLÉS SPE - LIS", "ED. FÍSICA", "INFORMÁTICA", "INFORMÁTICA", "CONTABILIDAD", "CONTABILIDAD"]
+			}, {
+                "day": 4,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "POLÍTICA", "TRIGONOMETRÍA", "TRIGONOMETRÍA"]
+			}, {
+                "day": 5,
+                "classes": ["QUÍMICA", "QUÍMICA", "LECT. COMPET.", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "FÍSICA", "FÍSICA"]
+			}]
+		}, {
+            "course": "DECIMO B",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["QUÍMICA", "QUÍMICA", "DANZAS", "RELIGIÓN", "ESPAÑOL", "CONTABILIDAD", "CONTABILIDAD"]
+			}, {
+                "day": 2,
+                "classes": ["INFORMÁTICA", "INFORMÁTICA", "ESPAÑOL", "ECONOMÍA", "INGLÉS WRI - REA", "TRIGONOMETRÍA", "TRIGONOMETRÍA"]
+			}, {
+                "day": 3,
+                "classes": ["LECT. COMPET.", "LECT. COMPET.", "INGLÉS WRI - REA", "FILOSOFÍA", "FILOSOFÍA", "FÍSICA", "FÍSICA"]
+			}, {
+                "day": 4,
+                "classes": ["INGLÉS SPE - LIS", "INGLÉS SPE - LIS", "LECTURA CRÍTICA", "TRIGONOMETRÍA", "TRIGONOMETRÍA", "DEMOCRACIA", "ED. FÍSICA"]
+			}, {
+                "day": 5,
+                "classes": ["POLÍTICA", "ESPAÑOL", "ESPAÑOL", "CONTABILIDAD", "CONTABILIDAD", "INGLÉS WRI - REA", "INGLÉS WRI - REA"]
+			}]
+		}, {
+            "course": "ONCE A",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["INGLÉS SPE - LIS", "INGLÉS SPE - LIS", "LECTURA CRÍTICA", "CÁLCULO", "CÁLCULO", "INFORMÁTICA", "INFORMÁTICA"]
+			}, {
+                "day": 2,
+                "classes": ["FÍSICA", "POLÍTICA", "ECONOMÍA", "CONTABILIDAD", "CONTABILIDAD", "INGLÉS WRI - REA", "INGLÉS WRI - REA"]
+			}, {
+                "day": 3,
+                "classes": ["FILOSOFÍA", "FILOSOFÍA", "FÍSICA", "ESPAÑOL", "ESPAÑOL", "DEMOCRACIA", "DANZAS"]
+			}, {
+                "day": 4,
+                "classes": ["LECT. COMPET.", "LECT. COMPET.", "RELIGIÓN", "ESPAÑOL", "ESPAÑOL", "QUÍMICA", "QUÍMICA"]
+			}, {
+                "day": 5,
+                "classes": ["INGLÉS WRI - REA", "INGLÉS WRI - REA", "CÁLCULO", "CÁLCULO", "ED. FÍSICA", "CONTABILIDAD", "CONTABILIDAD"]
+			}]
+		}
+                , {
+            "course": "ONCE B",
+            "type": "Secundaria",
+            "days": [{
+                "day": 1,
+                "classes": ["CÁLCULO", "CÁLCULO", "POLÍTICA", "INGLÉS WRI - REA", "INGLÉS WRI - REA", "LECT. COMPET.", "LECTURA CRÍTICA"]
+			}, {
+                "day": 2,
+                "classes": ["INGLÉS SPE - LIS", "INGLÉS SPE - LIS", "INGLÉS WRI - REA", "CÁLCULO", "CÁLCULO", "CONTABILIDAD", "CONTABILIDAD"]
+			}, {
+                "day": 3,
+                "classes": ["ESPAÑOL", "ESPAÑOL", "RELIGIÓN", "QUÍMICA", "QUÍMICA", "INFORMÁTICA", "DEMOCRACIA"]
+			}, {
+                "day": 4,
+                "classes": ["FÍSICA", "FÍSICA", "INFORMÁTICA", "CONTABILIDAD", "CONTABILIDAD", "ECONOMÍA", "INGLÉS WRI - REA"]
+			}, {
+                "day": 5,
+                "classes": ["ED. FÍSICA", "LECT. COMPET.", "DANZAS", "ESPAÑOL", "ESPAÑOL", "FILOSOFÍA", "FILOSOFÍA"]
+			}]
+		}
+    ]
+}

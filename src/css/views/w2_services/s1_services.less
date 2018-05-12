@@ -1,0 +1,73 @@
+/**
+ *  Filename : s1_process.less
+ *  View : route =>admissions
+
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_vars.less";
+@import "../../base/_mixins.less";
+
+
+section[name="servicesServices"] {
+
+
+    wrapper {
+        background-color: @color-yellow;
+        color: black;
+    }
+
+    swiper[swiper-name="services"] {
+        padding-bottom: 0vw;
+
+    }
+    swiper[swiper-name="services"] .swiper-container {
+
+
+        background-color: @color-white;
+        color: black;
+        padding-bottom: 60vw;
+        .slide-title-1 {
+            background-color: black;
+            color: white;
+        }
+        .slide-title-2 {
+            background-color: @color-yellow;
+            color: black;
+        }
+        .slide-content {}
+        ul.checklist {
+            width: 80%;
+        }
+        li.item:before {
+
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.2em;
+            top: 0.25em;
+            left: 0px;
+            content: url('/img/checklist/checkmark_y.svg');
+            position: relative;
+        }
+    }
+}
+
+
+@media @query-macbook {
+    section[name="servicesServices"] {
+        swiper[swiper-name="services"] .swiper-container {
+
+
+            background-color: @color-white;
+            color: black;
+
+            padding-bottom: 5vw;
+
+        }
+
+    }
+}

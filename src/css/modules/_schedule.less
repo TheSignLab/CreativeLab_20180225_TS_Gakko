@@ -1,0 +1,164 @@
+/**
+ *  Filename : _schedule.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../base/_mediaQueries.less";
+@import "../base/_mixins.less";
+@import "../base/_vars.less";
+
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+schedule-course {
+
+    width: 70vw;
+    display: block;
+    margin: 10vw auto;
+    margin-bottom: 0px;
+
+    schedule-day {
+        display: block;
+        width: 100%;
+        margin: 0vw auto;
+        margin-bottom: 10vw;
+        font-size: 6vw;
+    }
+
+    schedule-item {
+        display: block;
+
+
+        font-family: font-med-condensed;
+        line-height: 100%;
+
+        background-color: white;
+        color: black;
+
+        width: 100%;
+
+        padding: 1.5vw 4vw;
+        margin: 4vw auto;
+
+        box-sizing: border-box;
+
+        .flex-display(flex);
+        .flex-direction(column);
+        .flex-wrap(wrap);
+        .justify-content(center);
+        .align-content(center);
+        .align-items(center);
+
+
+        &.title-day {
+            background-color: black;
+            color: @color-yellow;
+            text-align: center;
+            padding: 1vw 0vw;
+            font-size: 1em;
+            span {
+                position: relative;
+                top: 0.5vw;
+                -webkit-align-self: center;
+                align-self: center;
+                text-align: center;
+            }
+
+        }
+
+        &.open {}
+        &.close {}
+
+        &.break {
+            background-color: black;
+            color: @color-white;
+            text-align: left;
+
+            font-size: 1em;
+            span {
+                position: relative;
+                top: 0.5vw;
+            }
+        }
+        &.lunch {
+            background-color: black;
+            color: @color-white;
+            text-align: left;
+
+            font-size: 1em;
+            span {
+                position: relative;
+                top: 0.5vw;
+            }
+        }
+
+    }
+
+}
+
+@media @query-macbook {
+
+    schedule-course {
+
+        width: 70vw;
+        display: block;
+        margin: 0vw auto;
+        .flex-display(flex);
+        .flex-direction(row);
+        .flex-wrap(wrap);
+        .justify-content(flex-start);
+        .align-content(flex-start);
+        .align-items(flex-start);
+
+        schedule-day {
+            margin: 0.25vw 1%;
+            width: calc(88%/5);
+            box-sizing: border-box;
+            font-size: 1.8vw;
+            margin-top: 1.7vw;
+
+        }
+
+        schedule-day:first-child {
+            margin-left: 2%;
+        }
+        schedule-day:last-child {
+            margin-right: 2%;
+        }
+
+
+        schedule-item {
+            font-size: 0.71em;
+            width: 100%;
+            padding: 0.4vw 0vw 0vw 0vw;
+            margin: 4% auto;
+            span.time{
+                font-family: font-light-condensed;
+            }
+            &.title-day {
+                padding: 0.2vw 0vw 0.5vw 0vw;
+                span {}
+
+            }
+            &.break {
+                padding: 0vw;
+                   span {top:0.2vw;}
+            }
+
+
+            &.lunch {
+                padding: 0vw;
+                   span {top:0.2vw;}
+            }
+
+
+        }
+    }
+
+}

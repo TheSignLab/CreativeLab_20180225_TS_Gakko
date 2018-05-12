@@ -1,0 +1,85 @@
+/**
+ *  Filename : _grid.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../base/_mediaQueries.less";
+@import "../base/_vars.less";
+
+
+html,
+body,
+main {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+
+section {
+    display: block;
+    width: 100vw;
+
+}
+
+wrapper {
+    display: block;
+    width: 100vw;
+
+    height: 100%;
+
+}
+
+[bg_white] {
+    background-color: @color-white;
+}
+
+[bg_yellow] {
+    background-color: @color-yellow;
+}
+
+[bg_black] {
+    background-color: @color-black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mobile,
+.mobile {
+    display: block !important;
+}
+
+desktop,
+.desktop {
+    display: none!important;
+}
+
+
+@media @query-macbook {
+
+
+    mobile,
+    .mobile {
+        display:  none!important;
+    }
+
+    desktop,
+    .desktop {
+        display: block!important;
+    }
+
+}
