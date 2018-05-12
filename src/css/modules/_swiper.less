@@ -1,0 +1,574 @@
+/**
+ *  Filename : swiper.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../base/_mediaQueries.less";
+@import "../base/_mixins.less";
+@import "../base/_vars.less";
+
+
+@swiper-tabs : ~ '.swiper-container-horizontal > .swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction';
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+swiper {
+    display: block;
+    width: 85vw;
+    height: auto;
+
+    margin: 0 auto;
+    position: relative;
+
+}
+
+div.swiper-container {
+    height: auto;
+    min-height: 50vh;
+    display: block;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+    border-top: 1vw solid @color-black;
+    overflow-y: scroll;
+
+    position: relative;
+
+
+    background-color: @color-yellow;
+    color: black;
+
+
+
+    background-image: linear-gradient(to right, #333 52%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10vw 1.5vw;
+    background-repeat: repeat-x;
+
+}
+
+@{swiper-tabs} {
+    bottom: auto;
+    top: 0px;
+    left: 0;
+    width: 100%;
+
+}
+
+.swiper-pagination-custom {
+
+    &.toTop {
+        bottom: auto;
+        top: -10vw;
+        left: 0;
+        z-index: 50;
+
+    }
+    &.toMiddle {
+        bottom: auto;
+        top: -3.5vw;
+        left: 0;
+        z-index: 50;
+    }
+}
+
+.swiper-pagination tabs {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(wrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+
+    &[type="dynamic"] {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: block;
+        overflow: hidden;
+        .flex-display(flex);
+        .flex-direction(row);
+        .flex-wrap(nowrap);
+        .justify-content(center);
+        .align-content(center);
+        .align-items(center);
+        tab {
+            display: none;
+        }
+        tab.active {
+            display: block;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+.swiper-pagination tab {
+    width: fit-content;
+    height: auto;
+    display: block;
+    background-color: white;
+    padding: 1vw 2.25vw;
+    margin: 0vw 1.5vw;
+    line-height: 100%;
+    color: black;
+    cursor: pointer;
+    border: .75vw solid black;
+
+    display: table-cell; // here it is
+    vertical-align: middle;
+
+
+    &.active {
+        background-color: black;
+        color: white;
+    }
+    span {
+        font-family: font-med-condensed;
+        font-size: 6vw;
+        position: relative;
+        top: 0.5vw;
+    }
+}
+
+
+.slide-title-1,
+.slide-title-2 {
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    height: auto;
+    font-family: font-med-condensed;
+
+    padding: 0vw 2vw;
+    padding-top: 1.5vw;
+
+    margin-top: 12vw;
+
+    font-size: 6.5vw;
+
+}
+
+.slide-title-1 {
+    background-color: white;
+    color: black;
+
+}
+
+.slide-title-2 {
+    background-color: black;
+    color: white;
+
+}
+
+.slide-content {
+    display: block;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    font-family: font-light;
+
+    padding: 0px 1vw;
+    margin: 5vw auto;
+
+    font-size: 4.7vw;
+
+
+}
+
+ul.checklist {
+    .flex-display(flex);
+    .flex-direction(column);
+    .flex-wrap(wrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+
+    display: block;
+
+    width: 70%;
+    height: auto;
+
+    padding-top: 5vw;
+    margin: 0 auto;
+
+    li.item {
+        position: relative;
+        display: list-item;
+        width: 100%;
+        font-family: font-light;
+        font-size: 1em;
+        padding-bottom: 2vw;
+        margin-bottom: 3vw;
+        border-bottom: 0.25vw solid black;
+        left: 0.5em;
+        font-size: 4.7vw;
+        span.f-bold {
+            font-size: 1em;
+            display: inline;
+        }
+    }
+    li.item:before {
+
+        display: inline-block;
+        width: 1em;
+        margin-left: -1.2em;
+        top: 0.25em;
+        left: 0px;
+        content: url('/img/checklist/checkmark.svg');
+        position: relative;
+    }
+
+}
+
+
+
+column {
+    width: 100%;
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(wrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+}
+
+
+swiper[swiper-type="swiper-photo"] {
+    padding-bottom: 0vw;
+    margin-bottom: 0vw;
+    wrapper-img {
+        display: block;
+        width: 100%;
+        height: 65vh;
+
+        box-sizing: border-box;
+        overflow: hidden;
+        z-index: 0;
+
+        border: 1vw solid black;
+
+        border-top: none;
+
+        background: none;
+        background-color: @color-yellow;
+        img {
+            display: block;
+            height: 100%;
+            position: relative;
+            left: -50%;
+        }
+    }
+    .swiper-buttons {
+        position: relative;
+        top: -3.5vw;
+        z-index: 50;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        height: auto;
+        position: relative;
+        .flex-display(flex);
+        .flex-direction(row);
+        .flex-wrap(wrap);
+        .justify-content(center);
+        .align-content(center);
+        .align-items(center);
+    }
+    .swiper-buttonPrev,
+    .swiper-buttonNext {
+        width: 8vw;
+        height: 8vw;
+        display: block;
+        background-color: white;
+
+
+    }
+    .swiper-buttonPrev {}
+    .swiper-buttonNext {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media @query-macbook {
+
+    swiper {
+        width: 58vw;
+        margin-top: 4.5vw;
+    }
+
+    swiper {
+        div.swiper-container {
+            width: 100%;
+            min-height: 0vh;
+            border-top: 0.3vw solid @color-black;
+            overflow-y: hidden;
+
+            background-color: @color-yellow;
+            color: black;
+            background-image: linear-gradient(to right, #333333 51%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 2vw 0.3vw;
+            background-repeat: repeat-x;
+        }
+        .swiper-pagination tab {
+
+            background-color: white;
+            padding: 0.7vw 1.3vw;
+            margin: 0vw 1vw;
+            line-height: 100%;
+          
+            color: black;
+            border: .2vw solid black;
+
+            &.active {
+                background-color: black;
+                color: white;
+            }
+            span {  opacity: 1;
+                font-size: 1.8vw;
+                top: 0.25vw;
+            }
+
+
+        }
+        .swiper-pagination tab span:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+
+        .swiper-pagination-custom {
+
+            &.toTop {
+                bottom: auto;
+                top: -10vw;
+                left: 0;
+                z-index: 50;
+
+            }
+            &.toMiddle {
+                bottom: auto;
+                top: -2.4vw;
+                left: 0;
+                z-index: 50;
+            }
+        }
+
+
+        .slide-title-1,
+        .slide-title-2 {
+            padding: 0vw 0.5vw;
+            padding-top: 0.45vw;
+            margin-top: 0vw;
+            font-size: 1.8vw;
+        }
+        .slide-content {
+            width: 80%;
+            padding: 0vw;
+            margin: 2vw 0vw;
+            font-size: 1.15vw;
+            text-align: left;
+        }
+        .slide-content:last-child {
+            margin: 0vw 0vw;
+            margin-bottom: 2vw;
+        }
+        .swiper-slide {
+            .flex-display(flex);
+            .flex-direction(row);
+            .flex-wrap(wrap);
+            .justify-content(flex-start);
+            .align-content(flex-start);
+            .align-items(flex-start);
+        }
+
+
+
+        column {
+            width: 50%;
+            padding: 3.5vw 0vw 0vw 6vw;
+            width: 50%;
+            box-sizing: border-box;
+            .flex-display(flex);
+            .flex-direction(row);
+            .flex-wrap(wrap);
+            .justify-content(flex-start);
+            .align-content(center);
+            .align-items(center);
+        }
+        column:last-child {
+            width: 50%;
+            padding: 4vw 0vw 2vw 0vw;
+        }
+        ul.checklist {
+
+            width: 72%;
+            height: auto;
+
+            padding-top: 0vw;
+            margin: 0 auto;
+
+            li.item {
+                padding-bottom: 1vw;
+                margin-bottom: 1vw;
+                border-bottom: 0.1vw solid black;
+                left: 0.0em;
+                font-size: 1.15vw;
+                span.f-bold {
+                    font-size: 1em;
+                    display: inline;
+                }
+            }
+            li.item:before {
+
+                display: inline-block;
+                width: 1em;
+                margin-left: -1.2em;
+                top: 0.25em;
+                left: 0px;
+                content: url('/img/checklist/checkmark.svg');
+                position: relative;
+            }
+            .swiper-buttons {
+
+                top: -3.5vw;
+                z-index: 50;
+                position: relative;
+                .flex-display(flex);
+                .flex-direction(row);
+                .flex-wrap(wrap);
+                .justify-content(center);
+                .align-content(center);
+                .align-items(center);
+            }
+            .swiper-buttonPrev,
+            .swiper-buttonNext {
+                width: 3vw;
+                height: 3vw;
+                display: block;
+                background-color: white;
+
+
+            }
+
+        }
+
+
+    }
+
+
+    swiper[swiper-type="swiper-photo"] {
+        padding-bottom: 0vw;
+        margin-bottom: 0vw;
+        wrapper-img {
+            display: block;
+            width: 100%;
+            height: 52vh;
+
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 0;
+
+            border: 0.25vw solid black;
+
+            border-top: none;
+
+            background: none;
+            background-color: @color-yellow;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: 0;
+                left: 0%;
+            }
+        }
+        .swiper-buttons {
+            position: relative;
+            top: -1.5vw;
+            z-index: 50;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            height: auto;
+            position: relative;
+            .flex-display(flex);
+            .flex-direction(row);
+            .flex-wrap(wrap);
+            .justify-content(center);
+            .align-content(center);
+            .align-items(center);
+        }
+        .swiper-buttonPrev,
+        .swiper-buttonNext {
+            width: 2.3vw;
+            height: 2.3vw;
+            display: block;
+            background-color: white;
+
+
+        }
+        .swiper-buttonPrev {}
+        .swiper-buttonNext {}
+    }
+
+
+    .swiper-buttonPrev,.swiper-buttonNext{
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+        .swiper-buttonPrev,.swiper-buttonNext:hover{
+        opacity: 1 !important;
+    }
+
+}

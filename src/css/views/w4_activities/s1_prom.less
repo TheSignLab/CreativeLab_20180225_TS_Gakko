@@ -1,0 +1,154 @@
+/**
+ *  Filename : s2_philosophy.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_mixins.less";
+@import "../../base/_vars.less";
+
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- //
+section[name="activitiesProm"] {
+
+    section-title:after {
+        background-image: url(../../img/underlines/underline.svg);
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 2.5vw;
+        content: "";
+
+    }
+
+}
+
+section[name="activitiesProm"] wrapper {
+
+    background-color: @color-yellow;
+
+    swiper {
+
+        div.swiper-container {
+            height: auto;
+            min-height: 50vh;
+            display: block;
+
+            margin: 0 auto;
+
+            box-sizing: border-box;
+
+            border-top: 1vw solid @color-black;
+            overflow-y: scroll;
+
+            position: relative;
+
+
+            background-color: @color-white;
+            color: black;
+
+
+
+            background-image: linear-gradient(to right, #333 52%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 10vw 1.5vw;
+            background-repeat: repeat-x;
+
+            li.item:before {
+
+                display: inline-block;
+                width: 1em;
+                margin-left: -1.2em;
+                top: 0.25em;
+                left: 0px;
+                content: url('/img/checklist/checkmark_y.svg');
+                position: relative;
+            }
+
+        }
+    }
+}
+
+
+
+@media @query-macbook {
+
+    section[name="activitiesProm"] wrapper {
+        swiper[swiper-type="swiper-photo"] {
+            padding-bottom: 0vw;
+            margin-bottom: 0vw;
+            margin-top: 2vw;
+            wrapper-img {
+                display: block;
+                width: 100%;
+                height: 60vh;
+
+                box-sizing: border-box;
+                overflow: hidden;
+                z-index: 0;
+
+                border: 0.25vw solid black;
+
+                border-top: none;
+
+                background: none;
+                background-color: @color-yellow;
+                img {
+          display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0%;
+                }
+            }
+            .swiper-buttons {
+                position: relative;
+                top: -1.5vw;
+                z-index: 50;
+                display: block;
+                margin: 0 auto;
+                width: fit-content;
+                height: auto;
+                position: relative;
+                .flex-display(flex);
+                .flex-direction(row);
+                .flex-wrap(wrap);
+                .justify-content(center);
+                .align-content(center);
+                .align-items(center);
+            }
+            .swiper-buttonPrev,
+            .swiper-buttonNext {
+                width: 2.3vw;
+                height: 2.3vw;
+                display: block;
+                background-color: white;
+
+
+            }
+            .swiper-buttonPrev {}
+            .swiper-buttonNext {}
+
+            div.swiper-container {
+                height: auto;
+                min-height: 0vh; 
+                display: block;
+                margin: 0 auto;
+                box-sizing: border-box;
+                border-top: 0.258vw solid #000000;
+                overflow: hidden;
+
+            }
+        }
+    }
+}

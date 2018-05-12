@@ -1,0 +1,126 @@
+/**
+ *  Filename : nav.less
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_mixins.less";
+@import "../../base/_vars.less";
+
+
+
+// ----------------------------------------- // 
+// Mobile First 
+// ----------------------------------------- // 
+section[name="contactUploadCV"] {
+    swiper {
+        padding-bottom: 50vw;
+        margin-bottom: 0px;
+        .swiper-container {
+            padding-bottom: 12vw;
+            margin-bottom: 0vw;
+        }
+        column {}
+    }
+    form {
+display: none;
+        position: relative;
+        top: -5vw;
+        input {
+            display: none;
+        }
+        label {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: font-med-condensed;
+            padding: 3vw 3vw 2vw;
+            position: relative;
+            top: -1vw;
+            z-index: 50;
+            font-size: 5.3vw;
+            letter-spacing: 0.2vw;
+        }
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media @query-macbook {
+    section[name="contactUploadCV"] {
+        section-title{
+            padding-top: 10.5vw;
+        }
+        swiper {
+            padding-bottom: 0vw;
+            margin-bottom: 0px;
+            margin-top: 2.25vw;
+            .swiper-container {
+                padding-bottom: 0vw;
+                margin-bottom: 0vw;
+                height: auto;
+                min-height: 0px;
+            }
+            column {
+                padding-bottom: 2vw;
+                .flex-display(flex);
+                .flex-direction(column);
+                .flex-wrap(wrap);
+                .justify-content(flex-start);
+                .align-content(flex-start);
+                .align-items(flex-start);
+            }
+            .slide-title-1,
+            .slide-title-2 {
+                display: block;
+
+
+            }
+            .slide-title-1 {
+                margin: 0px;
+            }
+            .slide-title-2 {}
+
+        }
+        form {
+
+            position: relative;
+            top: -5vw;
+            input {
+                display: none;
+            }
+            label {
+                display: none;
+               
+                font-size: 0px;
+                
+                width: fit-content;
+                margin: 0 auto;
+                text-align: center;
+                background-color: black;
+                color: white;
+                font-family: font-med-condensed;
+                padding: 0.8vw 0.8vw 0.7vw;
+                position: relative;
+                top: 3.5vw;
+                z-index: 50;
+                span {
+                    font-size: 1.5vw;
+                    letter-spacing: 0.1vw;
+                }
+                
+            }
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    }
+}
