@@ -31,7 +31,7 @@
                 <label for="messageInput" class="messageInput">
             <span>MENSAJE : </span>
             </label>
-                <textarea rows="9" cols="40" name="messageInput"></textarea>
+                <textarea rows="9" cols="40" name="messageInput" id="messageInput"></textarea>
                 <submit>ENVIAR</submit>
             </column>
 

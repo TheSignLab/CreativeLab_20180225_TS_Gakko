@@ -64,11 +64,12 @@
 
                 </div>
             </div>
-            <form action="php/cv.php" method="POST" enctype="multipart/form-data">
+            <form id="uploadCV" action="" method="post" enctype="multipart/form-data">
                 <input type="file" name="cv" id="inFileUpload" />
-                <label for="inFileUpload"> 
+                <label for="inFileUpload" id="spanUploadCV"> 
                     <span>SUBE TU HOJA DE VIDA</span> 
                 </label>
+                <input type="submit" value="Upload" class="submit" style="display:none"/>
             </form>
 
         </swiper>
