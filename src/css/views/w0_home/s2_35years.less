@@ -1,0 +1,215 @@
+/**
+ *  Filename : s1_logo.less
+ *  View : route => home
+
+ *  Preprocessor : LESS
+ *  Update : 03/05/18
+ *
+**/
+
+// -------- Imports and Requirements ------- //
+@import "../../base/_mediaQueries.less";
+@import "../../base/_vars.less";
+@import "../../base/_mixins.less";
+
+
+section[name="home35Years"] {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: @color-black;
+
+    wrapper {
+
+        width: 100vw;
+        height: 100vh;
+
+        display: block;
+
+        background-image: url("/img/covers/CTS_01.jpg");
+        background-size: cover;
+        background-position: center center;
+
+        .flex-display(flex);
+        .flex-direction(row);
+        .flex-wrap(wrap);
+        .justify-content(center);
+        .align-content(flex-start);
+        .align-items(center);
+    }
+
+    cover-title {
+        .flex-display(flex);
+        .flex-direction(row);
+        .flex-wrap(wrap);
+        .justify-content(center);
+        .align-content(center);
+        .align-items(center);
+    }
+
+    h1 {
+
+        width: 80%;
+        color: @color-white;
+        padding-top: 8vh;
+        .flex-display(flex);
+        .flex-direction(row);
+        .flex-wrap(wrap);
+        .justify-content(center);
+        .align-content(center);
+        .align-items(center);
+
+        span {
+            display: inline-block;
+        }
+        span[color="yellow"] {
+            padding: 0px 2vw;
+        }
+        /* El span de  " 35 Años " */
+        span[color="yellow"]:last-child {
+            width: fit-content;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+       
+        }
+
+        span[color="yellow"]:first-child::after {
+            background-image: none;
+            background-size: contain;
+            display: block;
+            width: 0%;
+            height: 0vh;
+            content: "";
+        }
+        span[color="yellow"]:last-child::after {
+            background-image: url(../../img/underlines/underline2.png);
+            background-size: 40vw;
+            display: block;
+            width: 100%;
+            height: 2.5vw;
+            content: "";
+        }
+
+    }
+
+    section-menu {
+        display: block;
+        width: 60vw;
+
+        .flex-display(flex);
+        .flex-direction(column);
+        .flex-wrap(wrap);
+        .justify-content(center);
+        .align-content(center);
+        .align-items(center);
+
+
+        item {
+            background-color: @color-yellow;
+            color: @color-black;
+            font-family: font-med-condensed;
+            font-size: 6.5vw;
+            margin: 2.5vw auto;
+            display: block;
+            letter-spacing: 0.2vw;
+            border-radius: 5vw;
+            line-height: 110%;
+            width: 100%;
+            text-align: center;
+            padding-top: 1.5vw;
+            padding-bottom: 1vw;
+
+        }
+    }
+
+
+}
+
+
+@media @query-macbook {
+
+
+    section[name="home35Years"] {
+
+        width: 100vw;
+        height: 100vh;
+        background-color: @color-black;
+
+        wrapper {}
+
+        cover-title {
+            width: 100%;
+        }
+
+        h1 {
+
+              width: 65%;
+    font-size: 7vw;
+    padding-top: 0vh;
+
+
+            span {
+                display: inline-block;
+            }
+            span[color="white"] {
+                position: relative;
+                color: #ffffff;
+                top: -0.5vw;
+            }
+            span[color="yellow"].first-child {
+
+                width: fit-content;
+                display: inline-block;
+                text-align: center;
+                margin: 10px auto;
+            }
+            /* El span de  " 35 Años " */
+            span[color="yellow"]:last-child {
+                width: fit-content;
+                display: inline-block;
+                text-align: center;
+                margin: 0 auto;
+                     padding-right: 0px;
+                margin-right: 0px;
+            }
+
+            span[color="yellow"].first-child::after {
+                background-image: url(../../img/underlines/underline1.png);
+                background-size: 8vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+                width: 100%;
+                height: 1.5vw;
+                position: relative;
+                content: "";
+                top: -1vw;
+            }
+
+            span[color="yellow"]:last-child::after {
+
+                background-image: url(../../img/underlines/underline2.png);
+                background-size: 20vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+                width: 100%;
+                height: 1.5vw;
+                position: relative;
+                content: "";
+                top: -1vw;
+            }
+
+        }
+
+        section-menu {
+            display: none;
+
+
+        }
+
+
+    }
+
+}

@@ -1,0 +1,86 @@
+<script type="text/javascript" src="js/base/loader.js"></script>
+<script type="text/javascript" src="js/base/routing.js"></script>
+
+
+
+
+
+<script type="text/javascript" src="js/base/fullPage.js"></script>
+<script type="text/javascript" src="js/base/fullPageHandler.js"></script>
+
+
+
+
+
+
+<script type="text/javascript" src="js/imgAndAnim/loader_animations.js"></script>
+<script type="text/javascript" src="js/imgAndAnim/init_animations.js"></script>
+<script type="text/javascript" src="js/imgAndAnim/anim_w0_home.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/controllers/lazyloading.js"></script>
+<script type="text/javascript" src="js/controllers/cookies.js"></script>
+<script type="text/javascript" src="js/controllers/autoSwipers.js"></script>
+<script type="text/javascript" src="js/controllers/nav.js"></script>
+<script type="text/javascript" src="js/controllers/map.js"></script>
+<script type="text/javascript" src="js/controllers/timeline.js"></script>
+<script type="text/javascript" src="js/controllers/forms.js"></script>
+
+
+
+
+<script>
+    $(document).ready(function() {
+        console.log("Starting SPA App ... Searching Routes");
+        routingByCookieOnLoad();
+    })
+
+
+    $(document).ready(function() {
+
+
+
+        if (document.documentElement.clientWidth > 1024) {
+            $("body").addClass("desktop");
+        } else {
+            $("body").addClass("mobile");
+
+        }
+
+        if ($("body").hasClass("mobile")) {
+            updateWindowOrientationForCTS();
+            // Listen for orientation changes
+            window.addEventListener("orientationchange", function() {
+                // Announce the new orientation number
+                updateWindowOrientationForCTS()
+            }, false);
+        }
+
+
+
+
+        function updateWindowOrientationForCTS() {
+            var wo = window.orientation;
+            if (wo == 90 || wo == -90) {
+                var targetRoute = $("route[name='landscapeDevice']");
+                var allRoutes = $("route");
+                allRoutes.removeAttr("active");
+                targetRoute.attr("active", "");
+                $("nav").hide();
+                $("footer").hide();
+            } else {
+                $("nav").show();
+                $("footer").show();
+                routingByCookieOnLoad();
+            }
+        }
+
+    })
+
+</script>
