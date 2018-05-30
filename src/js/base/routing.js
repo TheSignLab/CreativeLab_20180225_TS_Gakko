@@ -1,6 +1,6 @@
 
 function updateMetaByRouteName(routeName){
-    
+
     var metaTitle = "Colegio Tecnológico de Suba";
     if(routeName == "home"){metaTitle = "Colegio Tecnológico de Suba";}
     if(routeName == "admissions"){metaTitle = "Admisiones en Colegio Tecnológico de Suba. ¡Inscribete!";}
@@ -9,7 +9,7 @@ function updateMetaByRouteName(routeName){
     if(routeName == "contact"){metaTitle = "¿Donde estamos? Colegio Tecnológico de Suba";}
     $("title").html(metaTitle );
 
-    
+
 }
 
 
@@ -43,6 +43,7 @@ function updateCTSByRouteName(routeName) {
         sectionSelector: 'section',
         responsiveWidth: 800,
         scrollOverflow: isScrollabe,
+        scrollBar: true,
         afterLoad: function (anchorLink, index) {
             afterLoadByRouteName(anchorLink, index, routeName);
         },
@@ -81,8 +82,8 @@ $(document).ready(function () {
 
         var _this = $(this);
         if(_this.hasClass("mob")){_this.addClass('animated pulse');}
-        
-  
+
+
         try {
             navigator.vibrate(1000);
         } catch (e) {
@@ -118,14 +119,9 @@ $(document).ready(function () {
             content = event.state.plate;
         }
     }
-    
-    
-    
-    
+
+
+
+
 
 })
-
-
-
-
-
