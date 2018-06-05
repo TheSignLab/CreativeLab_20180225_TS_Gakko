@@ -46,7 +46,7 @@ section[name="contactUploadCV"] form label {
 }
 @media (min-width: 1200px)  {
   section[name="contactUploadCV"] section-title {
-    padding-top: 10.5vw;
+    padding-top: 5.5vw;
   }
   section[name="contactUploadCV"] swiper {
     padding-bottom: 0vw;

@@ -37,8 +37,18 @@
 
 <script>
     $(document).ready(function() {
+        
         console.log("Starting SPA App ... Searching Routes");
-        routingByCookieOnLoad();
+        
+        var urlHost = 'http://'+ window.location.host ;
+        var urlRoute =window.location.href ;
+        var routeByURL  = urlRoute.replace(urlHost,'').replace("/","");
+        if(routeByURL){
+            updateCTSByRouteName(routeByURL);
+        }else{
+            routingByCookieOnLoad();
+        }
+        
     })
 
 

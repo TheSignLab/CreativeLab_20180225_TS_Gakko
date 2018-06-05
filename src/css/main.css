@@ -424,7 +424,8 @@ span[color="yellow"] {
 html,
 body,
 main {
-  width: 100vw;
+  width: 100%;
+  box-sizing: border-box;
   height: auto;
   overflow-x: hidden;
 }
@@ -460,7 +461,7 @@ desktop,
   wrapper {
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     overflow-x: hidden;
   }
   mobile,
@@ -2179,6 +2180,11 @@ schedule-course schedule-item.lunch span {
   width: 7vw;
   height: auto;
   display: block;
+  cursor: pointer;
+  opacity: 1;
+}
+#w0_s2_e1_obj:hover {
+  opacity: 0.7;
 }
 #w0_s3_e1_obj,
 #w0_s3_e2_obj {
@@ -2620,7 +2626,7 @@ schedule-course schedule-item.lunch span {
     width: 17vw;
     left: 20vw;
   }
-  #w1_s3_e4_obj[alt="Birrete"] {
+  #w1_s3_e2_obj[alt="Birrete"] {
     display: block;
     position: absolute;
     bottom: 11vw;
@@ -3467,7 +3473,7 @@ schedule-course schedule-item.lunch span {
   #w5_s2_e4_obj[alt="Lapiz"] {
     position: absolute;
     top: auto;
-    bottom: 12vh;
+    bottom: 5vw;
     width: 19vw;
     margin: 0 auto;
     display: block;
@@ -4414,7 +4420,7 @@ section[name="admissionContact"] wrapper {
 }
 @media (min-width: 1200px)  {
   section[name="admissionContact"] wrapper {
-    padding-bottom: 0vw;
+    padding-bottom: 40vw;
   }
 }
 /**
@@ -4464,6 +4470,9 @@ section[name="servicesServices"] swiper[swiper-name="services"] .swiper-containe
   position: relative;
 }
 @media (min-width: 1200px)  {
+  section[name="servicesServices"] swiper[swiper-name="services"] {
+    padding-bottom: 5vw;
+  }
   section[name="servicesServices"] swiper[swiper-name="services"] wrapper-img {
     background-color: #f7b41b;
     background-image: url();
@@ -4506,7 +4515,8 @@ section[name="aboutTimeline"] section-title {
     background-color: #000000;
     color: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    height: fit-content;
   }
   section[name="aboutTimeline"] section-title h2 {
     filter: invert(100%);
@@ -4516,7 +4526,8 @@ section[name="aboutTimeline"] section-title {
   }
   section[name="aboutTimeline"] wrapper {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    height: fit-content;
   }
 }
 /**
@@ -4965,7 +4976,7 @@ section[name="contactUploadCV"] form label {
 }
 @media (min-width: 1200px)  {
   section[name="contactUploadCV"] section-title {
-    padding-top: 10.5vw;
+    padding-top: 5.5vw;
   }
   section[name="contactUploadCV"] swiper {
     padding-bottom: 0vw;
@@ -5170,3 +5181,30 @@ img.hands {
 [hidden] {
   display: none !important;
 }
+/* customize scrollbar css
+	::-webkit-scrollbar{
+		width:13px;
+		background-color:#cccccc;
+	}
+	::-webkit-scrollbar:horizontal{
+		height:13px;
+	}
+	::-webkit-scrollbar-track{
+		border:1px #787878 solid;
+		border-radius:10px;
+		-webkit-box-shadow:0 0 6px #c8c8c8 inset;
+	}
+	::-webkit-scrollbar-thumb{
+		background-color:#ffcb27;
+		border:1px solid #ffcb27;
+		border-radius:16px;
+	}
+	::-webkit-scrollbar-thumb:hover{
+		background-color:#ffcb27;
+		border:1px solid #ffcb27;
+	}
+	::-webkit-scrollbar-thumb:active{
+		background-color:#ffcb27;
+		border:1px solid #333333;
+	}
+ */

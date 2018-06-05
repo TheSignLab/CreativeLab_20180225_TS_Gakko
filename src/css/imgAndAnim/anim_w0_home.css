@@ -35,6 +35,11 @@ span[color="yellow"] {
   width: 7vw;
   height: auto;
   display: block;
+  cursor: pointer;
+  opacity: 1;
+}
+#w0_s2_e1_obj:hover {
+  opacity: 0.7;
 }
 #w0_s3_e1_obj,
 #w0_s3_e2_obj {

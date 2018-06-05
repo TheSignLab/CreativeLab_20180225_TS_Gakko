@@ -34,8 +34,8 @@ $htmlSlide2 = '
 
 
 
-<section name="aboutMission" sectionNumber="4" id="w3s4" class="">
-    <wrapper>
+<section name="aboutMission" sectionNumber="4" id="w3s4" class="" style="    min-height: 100vh;">
+    <wrapper style="height: 100%;">
 
         <section-title>
             <h2>

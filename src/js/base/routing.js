@@ -49,8 +49,8 @@ function updateCTSByRouteName(routeName) {
     }
     var FullPageOptions = {
         sectionSelector: 'section',
-        responsiveWidth: 800,
-        scrollOverflow: isScrollabe,
+        responsiveWidth: 2000,
+        scrollOverflow: false,
         scrollBar: true,
         recordHistory: true,
         autoScrolling: false,
@@ -89,8 +89,20 @@ function updateCTSByRouteName(routeName) {
         'page_path': '/' + routeName
     });
 
+    window.history.pushState("", "", '/' + routeName);
 }
 
+function updateCTSBySectionName(sectionName){
+    if(sectionName){
+    setTimeout(function(){
+        $.fn.fullpage.moveTo(sectionName);
+    },500)
+    }
+    else{
+       $.fn.fullpage.moveTo(1); 
+    }
+    
+}
 
 $(document).ready(function () {
 
@@ -114,12 +126,14 @@ $(document).ready(function () {
         $(this).addClass("route-active");
 
         var thisRoute = $(this).attr("routeTo");
+        var thisSection = $(this).attr("sectionTo");
 
         // Ya seleccionado la ruta,... cerramos el menu.
         if (thisRoute && (document.documentElement.clientWidth < 1024)) {
             setTimeout(function () {
                 // Updating animation, fullpage,etc
                 updateCTSByRouteName(thisRoute);
+                 updateCTSBySectionName(thisSection)
 
                 $(".hamburger").removeClass("is-active");
                 $("mobile-nav nav-menu").removeClass("is-active");
@@ -128,6 +142,7 @@ $(document).ready(function () {
         } else {
             // Updating animation, fullpage,etc
             updateCTSByRouteName(thisRoute);
+            updateCTSBySectionName(thisSection)
         }
 
 

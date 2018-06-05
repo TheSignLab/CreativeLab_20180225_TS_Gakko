@@ -16,6 +16,6 @@ section[name="admissionContact"] wrapper {
 }
 @media (min-width: 1200px)  {
   section[name="admissionContact"] wrapper {
-    padding-bottom: 0vw;
+    padding-bottom: 40vw;
   }
 }

@@ -1,4 +1,4 @@
-<section name="admissionContact" sectionNumber="3" id="w1s3" class="">
+<section name="admissionContact" sectionNumber="3" id="w1s3" class="" bg_yellow>
     <wrapper bg_yellow>
 
         <section-title class="small">
@@ -43,7 +43,7 @@
             <anim id="w1_s3_e3_obj" alt="Bigotes"></anim>
         </div>
         <div class="desktop">
-            <anim id="w1_s3_e4_obj" alt="Birrete"></anim>
+            <anim id="w1_s3_e2_obj" alt="Birrete"></anim>
         </div>
 
 

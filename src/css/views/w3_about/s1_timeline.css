@@ -35,7 +35,8 @@ section[name="aboutTimeline"] section-title {
     background-color: #000000;
     color: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    height: fit-content;
   }
   section[name="aboutTimeline"] section-title h2 {
     filter: invert(100%);
@@ -45,6 +46,7 @@ section[name="aboutTimeline"] section-title {
   }
   section[name="aboutTimeline"] wrapper {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    height: fit-content;
   }
 }

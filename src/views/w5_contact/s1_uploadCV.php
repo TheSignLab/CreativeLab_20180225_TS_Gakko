@@ -43,7 +43,7 @@
 
 
 <section name="contactUploadCV" sectionNumber="2" id="w5s2" class="">
-    <wrapper>
+    <wrapper style="min-height:100vh">
 
         <section-title>
             <h2>

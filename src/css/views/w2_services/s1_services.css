@@ -52,6 +52,9 @@ section[name="servicesServices"] swiper[swiper-name="services"] .swiper-containe
   position: relative;
 }
 @media (min-width: 1200px)  {
+  section[name="servicesServices"] swiper[swiper-name="services"] {
+    padding-bottom: 5vw;
+  }
   section[name="servicesServices"] swiper[swiper-name="services"] wrapper-img {
     background-color: #f7b41b;
     background-image: url();
