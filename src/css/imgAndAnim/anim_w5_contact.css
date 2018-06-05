@@ -41,6 +41,17 @@ span[color="yellow"] {
   right: calc(43vw);
   z-index: 100;
 }
+#w5_s2_e3_obj[alt="Rayitas señor"] {
+  position: absolute;
+  top: auto;
+  bottom: 2vw;
+  width: 4.5vw;
+  margin: 0 auto;
+  display: block;
+  right: 13.5vw;
+  z-index: 100;
+  left: auto;
+}
 @media (min-width: 1200px)  {
   #w5_s2_e1_img[alt="Señora"] {
     position: absolute;
@@ -89,8 +100,8 @@ span[color="yellow"] {
   #w5_s2_e4_obj[alt="Lapiz"] {
     position: absolute;
     top: auto;
-    bottom: 6vw;
-    width: 18vw;
+    bottom: 12vh;
+    width: 19vw;
     margin: 0 auto;
     display: block;
     right: calc(41vw);

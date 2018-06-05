@@ -64,9 +64,9 @@
 
                 </div>
             </div>
-            <form id="uploadCV" action="" method="post" enctype="multipart/form-data">
-                <input type="file" name="cv" id="inFileUpload" />
-                <label for="inFileUpload" id="spanUploadCV"> 
+            <form id="uploadCV" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" />
+                <label for="file" id="spanUploadCV" onHoverOpacity> 
                     <span>SUBE TU HOJA DE VIDA</span> 
                 </label>
                 <input type="submit" value="Upload" class="submit" style="display:none"/>

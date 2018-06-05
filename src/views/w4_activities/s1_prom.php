@@ -1,27 +1,27 @@
 <?php 
 
-    $htmlSlide1 = '<wrapper-img>
-                        <img src="/img/prom/m/CTS_30.jpg" alt="Instalacions del CTS : Cafeteria" lazy-src="/img/prom/CTS_30.jpg">
+    $htmlSlide1 = '<wrapper-img style="background-image: url(\'/img/prom/CTS_30.jpg\');">
+                       
                     </wrapper-img> ';
 
-     $htmlSlide2 = '<wrapper-img>
-                        <img src="/img/prom/m/CTS_31.jpg" alt="Instalacions del CTS : Cafeteria" lazy-src="/img/prom/CTS_31.jpg">
+     $htmlSlide2 = '<wrapper-img style="background-image: url(\'/img/prom/CTS_31.jpg\');">
+                       
                     </wrapper-img> ';
    
-    $htmlSlide3 = '<wrapper-img>
-                        <img src="/img/prom/m/CTS_32.jpg" alt="Instalacions del CTS : Cafeteria" lazy-src="/img/prom/CTS_32.jpg">
+    $htmlSlide3 = '<wrapper-img style="background-image: url(\'/img/prom/CTS_32.jpg\');">
+                        
                     </wrapper-img> ';
 
-    $htmlSlide4 = '<wrapper-img>
-                        <img src="/img/prom/m/CTS_33.jpg" alt="Instalacions del CTS : Cafeteria" lazy-src="/img/prom/CTS_33.jpg">
+    $htmlSlide4 = '<wrapper-img style="background-image: url(\'/img/prom/CTS_33.jpg\');">
+                      
                     </wrapper-img> ';
 
-    $htmlSlide5 = '<wrapper-img>
-                        <img src="/img/prom/m/CTS_34.jpg" alt="Instalacions del CTS : Cafeteria" lazy-src="/img/prom/CTS_34.jpg">
+    $htmlSlide5 = '<wrapper-img style="background-image: url(\'/img/prom/CTS_34.jpg\');">
+                        
                     </wrapper-img> ';
 
-    $htmlSlide6 = '<wrapper-img>
-                        <img src="/img/prom/m/CTS_35.jpg" alt="Instalacions del CTS : Cafeteria" lazy-src="/img/prom/CTS_35.jpg">
+    $htmlSlide6 = '<wrapper-img style="background-image: url(\'/img/prom/CTS_35.jpg\');">
+                        
                     </wrapper-img> ';
 
 ?>

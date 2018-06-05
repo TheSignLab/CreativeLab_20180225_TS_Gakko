@@ -132,7 +132,7 @@ form.contactForm submit {
     width: 58vw;
     left: calc(21vw);
     padding: 0vw;
-    height: 100vh;
+    height: 80vh;
     font-size: 2vw;
     display: -webkit-flex;
     display: -ms-flexbox;

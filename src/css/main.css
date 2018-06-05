@@ -426,16 +426,18 @@ body,
 main {
   width: 100vw;
   height: auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 section {
   display: block;
   width: 100vw;
+  overflow-x: hidden;
 }
 wrapper {
   display: block;
   width: 100vw;
-  height: 100%;
+  height: fit-content;
+  overflow-x: hidden;
 }
 [bg_white] {
   background-color: #ffffff;
@@ -455,6 +457,12 @@ desktop,
   display: none!important;
 }
 @media (min-width: 1200px)  {
+  wrapper {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
   mobile,
   .mobile {
     display: none!important;
@@ -877,12 +885,16 @@ swiper[swiper-type="swiper-photo"] wrapper-img {
   border-top: none;
   background: none;
   background-color: #f7b41b;
+  background-image: url();
+  background-size: cover !important;
+  background-position: center center !important;
 }
 swiper[swiper-type="swiper-photo"] wrapper-img img {
   display: block;
   height: 100%;
   position: relative;
   left: -50%;
+  top: -5vw !important;
 }
 swiper[swiper-type="swiper-photo"] .swiper-buttons {
   top: -3.5vw;
@@ -1108,6 +1120,9 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
     border-top: none;
     background: none;
     background-color: #f7b41b;
+    background-image: url();
+    background-size: cover !important;
+    background-position: center center !important;
   }
   swiper[swiper-type="swiper-photo"] wrapper-img img {
     display: block;
@@ -1291,7 +1306,7 @@ form.contactForm submit {
     width: 58vw;
     left: calc(21vw);
     padding: 0vw;
-    height: 100vh;
+    height: 80vh;
     font-size: 2vw;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2168,7 +2183,7 @@ schedule-course schedule-item.lunch span {
 #w0_s3_e1_obj,
 #w0_s3_e2_obj {
   position: relative;
-  width: 5.5vw !important;
+  width: 4vw !important;
   height: auto;
   top: 0vw;
   display: inline-block;
@@ -3393,6 +3408,17 @@ schedule-course schedule-item.lunch span {
   right: calc(43vw);
   z-index: 100;
 }
+#w5_s2_e3_obj[alt="Rayitas señor"] {
+  position: absolute;
+  top: auto;
+  bottom: 2vw;
+  width: 4.5vw;
+  margin: 0 auto;
+  display: block;
+  right: 13.5vw;
+  z-index: 100;
+  left: auto;
+}
 @media (min-width: 1200px)  {
   #w5_s2_e1_img[alt="Señora"] {
     position: absolute;
@@ -3441,8 +3467,8 @@ schedule-course schedule-item.lunch span {
   #w5_s2_e4_obj[alt="Lapiz"] {
     position: absolute;
     top: auto;
-    bottom: 6vw;
-    width: 18vw;
+    bottom: 12vh;
+    width: 19vw;
     margin: 0 auto;
     display: block;
     right: calc(41vw);
@@ -3477,7 +3503,7 @@ desktop-nav,
 mobile-nav {
   position: fixed;
   top: 0px;
-  z-index: 50;
+  z-index: 200;
   background-color: #000000;
 }
 desktop-nav {
@@ -3485,7 +3511,7 @@ desktop-nav {
 }
 mobile-nav nav-header {
   display: block;
-  z-index: 100;
+  z-index: 200;
   width: 100vw;
   height: auto;
   padding: 1vw;
@@ -3523,7 +3549,7 @@ mobile-nav nav-menu {
   display: block;
   position: absolute;
   top: -100vh;
-  z-index: 50;
+  z-index: 200;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -4386,6 +4412,11 @@ section[name="admissionProcess"] [swiper-name="admissionProcess"] div.swiper-con
 section[name="admissionContact"] wrapper {
   padding-bottom: 30vw;
 }
+@media (min-width: 1200px)  {
+  section[name="admissionContact"] wrapper {
+    padding-bottom: 0vw;
+  }
+}
 /**
  *  Filename : s1_process.less
  *  View : route =>admissions
@@ -4400,6 +4431,12 @@ section[name="servicesServices"] wrapper {
 }
 section[name="servicesServices"] swiper[swiper-name="services"] {
   padding-bottom: 0vw;
+}
+section[name="servicesServices"] swiper[swiper-name="services"] wrapper-img {
+  background-color: #f7b41b;
+  background-image: url();
+  background-size: cover !important;
+  background-position: center center !important;
 }
 section[name="servicesServices"] swiper[swiper-name="services"] .swiper-container {
   background-color: #ffffff;
@@ -4427,6 +4464,12 @@ section[name="servicesServices"] swiper[swiper-name="services"] .swiper-containe
   position: relative;
 }
 @media (min-width: 1200px)  {
+  section[name="servicesServices"] swiper[swiper-name="services"] wrapper-img {
+    background-color: #f7b41b;
+    background-image: url();
+    background-size: cover !important;
+    background-position: center center !important;
+  }
   section[name="servicesServices"] swiper[swiper-name="services"] .swiper-container {
     background-color: #ffffff;
     color: black;
@@ -4672,6 +4715,12 @@ section[name="activitiesProm"] wrapper swiper div.swiper-container li.item:befor
   content: url('/img/checklist/checkmark_y.svg');
   position: relative;
 }
+section[name="activitiesProm"] wrapper swiper[swiper-type="swiper-photo"] wrapper-img {
+  background-color: #f7b41b;
+  background-image: url();
+  background-size: cover !important;
+  background-position: center center !important;
+}
 @media (min-width: 1200px)  {
   section[name="activitiesProm"] wrapper swiper[swiper-type="swiper-photo"] {
     padding-bottom: 0vw;
@@ -4689,14 +4738,9 @@ section[name="activitiesProm"] wrapper swiper div.swiper-container li.item:befor
     border-top: none;
     background: none;
     background-color: #f7b41b;
-  }
-  section[name="activitiesProm"] wrapper swiper[swiper-type="swiper-photo"] wrapper-img img {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 0%;
+    background-image: url();
+    background-size: cover !important;
+    background-position: center center !important;
   }
   section[name="activitiesProm"] wrapper swiper[swiper-type="swiper-photo"] .swiper-buttons {
     top: -1.5vw;
@@ -4895,7 +4939,7 @@ section[name="contactUploadCV"] swiper .swiper-container {
   margin-bottom: 0vw;
 }
 section[name="contactUploadCV"] form {
-  display: none;
+  display: block;
   position: relative;
   top: -5vw;
   width: 100%;
@@ -4970,10 +5014,10 @@ section[name="contactUploadCV"] form label {
     margin: 0 auto;
   }
   section[name="contactUploadCV"] form input {
-    display: none;
+    display: block;
   }
   section[name="contactUploadCV"] form label {
-    display: none;
+    display: block;
     font-size: 0px;
     width: fit-content;
     margin: 0 auto;
@@ -4983,7 +5027,7 @@ section[name="contactUploadCV"] form label {
     font-family: font-med-condensed;
     padding: 0.8vw 0.8vw 0.7vw;
     position: relative;
-    top: 3.5vw;
+    top: 2vw;
     z-index: 50;
   }
   section[name="contactUploadCV"] form label span {

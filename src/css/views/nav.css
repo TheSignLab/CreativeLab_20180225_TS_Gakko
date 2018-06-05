@@ -21,7 +21,7 @@ desktop-nav,
 mobile-nav {
   position: fixed;
   top: 0px;
-  z-index: 50;
+  z-index: 200;
   background-color: #000000;
 }
 desktop-nav {
@@ -29,7 +29,7 @@ desktop-nav {
 }
 mobile-nav nav-header {
   display: block;
-  z-index: 100;
+  z-index: 200;
   width: 100vw;
   height: auto;
   padding: 1vw;
@@ -67,7 +67,7 @@ mobile-nav nav-menu {
   display: block;
   position: absolute;
   top: -100vh;
-  z-index: 50;
+  z-index: 200;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;

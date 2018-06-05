@@ -11,7 +11,7 @@ $(document).ready(function () {
 
         window["swiper_" + meId] = new Swiper('[swiper-name="' + meId + '"] .swiper-container', {
             speed: 400,
-            spaceBetween: 800,
+            spaceBetween: 0,
             pagination: {
                 el: mePaginationEl,
                 type: 'custom',

@@ -251,12 +251,16 @@ swiper[swiper-type="swiper-photo"] wrapper-img {
   border-top: none;
   background: none;
   background-color: #f7b41b;
+  background-image: url();
+  background-size: cover !important;
+  background-position: center center !important;
 }
 swiper[swiper-type="swiper-photo"] wrapper-img img {
   display: block;
   height: 100%;
   position: relative;
   left: -50%;
+  top: -5vw !important;
 }
 swiper[swiper-type="swiper-photo"] .swiper-buttons {
   top: -3.5vw;
@@ -482,6 +486,9 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
     border-top: none;
     background: none;
     background-color: #f7b41b;
+    background-image: url();
+    background-size: cover !important;
+    background-position: center center !important;
   }
   swiper[swiper-type="swiper-photo"] wrapper-img img {
     display: block;

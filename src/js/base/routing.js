@@ -1,13 +1,22 @@
-
-function updateMetaByRouteName(routeName){
+function updateMetaByRouteName(routeName) {
 
     var metaTitle = "Colegio Tecnológico de Suba";
-    if(routeName == "home"){metaTitle = "Colegio Tecnológico de Suba";}
-    if(routeName == "admissions"){metaTitle = "Admisiones en Colegio Tecnológico de Suba. ¡Inscribete!";}
-    if(routeName == "about"){metaTitle = "¿Quienes somos? Colegio Tecnológico de Suba";}
-    if(routeName == "activities"){metaTitle = "Actividades en el Colegio Tecnológico de Suba";}
-    if(routeName == "contact"){metaTitle = "¿Donde estamos? Colegio Tecnológico de Suba";}
-    $("title").html(metaTitle );
+    if (routeName == "home") {
+        metaTitle = "Colegio Tecnológico de Suba";
+    }
+    if (routeName == "admissions") {
+        metaTitle = "Admisiones en Colegio Tecnológico de Suba. ¡Inscribete!";
+    }
+    if (routeName == "about") {
+        metaTitle = "¿Quienes somos? Colegio Tecnológico de Suba";
+    }
+    if (routeName == "activities") {
+        metaTitle = "Actividades en el Colegio Tecnológico de Suba";
+    }
+    if (routeName == "contact") {
+        metaTitle = "¿Donde estamos? Colegio Tecnológico de Suba";
+    }
+    $("title").html(metaTitle);
 
 
 }
@@ -39,16 +48,25 @@ function updateCTSByRouteName(routeName) {
         console.log("isScrollable")
     }
     var FullPageOptions = {
-        scrollBar: false,
         sectionSelector: 'section',
         responsiveWidth: 800,
         scrollOverflow: isScrollabe,
         scrollBar: true,
+        recordHistory: true,
+        autoScrolling: false,
+        keyboardScrolling: true,
+        animateAnchor: true,
+        normalScrollElements: 'timeline-desktop',
+        css3: true,
+
         afterLoad: function (anchorLink, index) {
             afterLoadByRouteName(anchorLink, index, routeName);
         },
         onLeave: function (index, nextIndex, direction) {
             onLeaveByRouteName(index, nextIndex, direction, routeName);
+        },
+        afterRender: function () {
+            $.fn.fullpage.moveTo(1);
         }
     }
 
@@ -81,7 +99,9 @@ $(document).ready(function () {
 
 
         var _this = $(this);
-        if(_this.hasClass("mob")){_this.addClass('animated pulse');}
+        if (_this.hasClass("mob")) {
+            _this.addClass('animated pulse');
+        }
 
 
         try {
@@ -96,14 +116,20 @@ $(document).ready(function () {
         var thisRoute = $(this).attr("routeTo");
 
         // Ya seleccionado la ruta,... cerramos el menu.
-        setTimeout(function () {
-             // Updating animation, fullpage,etc
-            updateCTSByRouteName(thisRoute);
+        if (thisRoute && (document.documentElement.clientWidth < 1024)) {
+            setTimeout(function () {
+                // Updating animation, fullpage,etc
+                updateCTSByRouteName(thisRoute);
 
-            $(".hamburger").removeClass("is-active");
-            $("mobile-nav nav-menu").removeClass("is-active");
-            _this.removeClass('animated pulse');
-        }, 850);
+                $(".hamburger").removeClass("is-active");
+                $("mobile-nav nav-menu").removeClass("is-active");
+                _this.removeClass('animated pulse');
+            }, 850);
+        } else {
+            // Updating animation, fullpage,etc
+            updateCTSByRouteName(thisRoute);
+        }
+
 
         if (window.debugRouting) {
             console.log("routing.js -->  Routing to ' " + thisRoute + " '");

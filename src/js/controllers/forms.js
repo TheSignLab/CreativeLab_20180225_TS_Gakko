@@ -24,7 +24,7 @@ function checkForm(parameters) {
 
 
 }
-
+var GlobalFormData;
 
 function sendContactForm() {
 
@@ -49,11 +49,11 @@ function sendContactForm() {
             url: '/backend/processFormAdmissions.php', //archivo que recibe la peticion
             type: 'post', //método de envio
             beforeSend: function () {
-                 $(".contactForm submit").text("Enviando ... ");
+                $(".contactForm submit").text("Enviando ... ");
             },
             success: function (response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
-               
-               
+
+
                 $(".contactForm submit").text("Enviado");
 
                 setTimeout(function () {
@@ -69,10 +69,8 @@ function sendContactForm() {
         });
 
     } else {
-
         console.error("Error checking form");
         console.table(p)
-
     }
 
 
@@ -83,21 +81,6 @@ function sendContactForm() {
 
 
 
-function uploadCVForm() {
-    $.ajax({
-        url: "/backend/uploadCVFile.php", // Url to which the request is send
-        type: "POST", // Type of request to be send, called as method
-        data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
-        contentType: false, // The content type used when sending data to the server.
-        cache: false, // To unable request pages to be cached
-        processData: false, // To send DOMDocument or non processed data file it is set to false
-        success: function (data) // A function to be called if request succeeds
-        {
-            $('#loading').hide();
-            $("#message").html(data);
-        }
-    });
-}
 
 
 
@@ -105,26 +88,59 @@ function uploadCVForm() {
 $(".contactForm submit").click(function () {
     sendContactForm()
 });
+var FormUpCVEnable = true;
 
-$("#spanUploadCV").click(function () {
-    document.getElementById("#uploadCV").submit();
+$("#spanUploadCV").click(function (e) {
+
+    if (FormUpCVEnable) {
+        FormUpCVEnable = false;
+        $("#uploadCV").trigger('submit');
+    }
 });
 
 
-
 $("#uploadCV").on('submit', (function (e) {
-            e.preventDefault();
-            $.ajax({
-                    url: "/backend/uploadCVFile2.php", // Url to which the request is send
-                    type: "POST", // Type of request to be send, called as method
-                    data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
-                    contentType: false, // The content type used when sending data to the server.
-                    cache: false, // To unable request pages to be cached
-                    processData: false, // To send DOMDocument or non processed data file it is set to false
-                    success: function (data) // A function to be called if request succeeds
-                    {
-                        console.log(data)
-                    }
-            });
+    e.preventDefault();
+    $("#file").change(function (e) {
+        var fd = new FormData();
+        var files = $('#file')[0].files[0];
+        fd.append('file', files);
+
+        $.ajax({
+            url: 'http://dev.colegiotecnologicodesuba.edu.co/backend/uploadCVFile2.php',
+            type: 'post',
+            data: fd,
+            contentType: false,
+            processData: false,
+            beforeSend: function () {
+                console.log("Submitting ... ");
+                $("#spanUploadCV span").html("Subiendo ... ");
+            },
+            success: function (response) {
+                console.log(response)
+                if (response.status == "OK") {
+                    $("#spanUploadCV span").html("Archivo enviado exitosamente");
+                    setTimeout(function () {
+                        $("#spanUploadCV span").html("SUBE TU HOJA DE VIDA");
+                    }, 3000);
+                } else {
+                    $("#spanUploadCV span").html("CV Subido Exitosamente");
+                    setTimeout(function () {
+                        $("#spanUploadCV span").html("SUBE TU HOJA DE VIDA");
+                    }, 3000);
+                    console.log("Response with some error");
+                    console.log(response);
+                }
+                FormUpCVEnable = true;
+
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                console.log(xhr.status);
+                console.log(thrownError);
+                FormUpCVEnable = true;
+            }
+        });
+    });
+
+
 }));
-            

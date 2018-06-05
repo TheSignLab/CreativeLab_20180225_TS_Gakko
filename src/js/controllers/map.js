@@ -449,7 +449,7 @@ function initMap() {
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('cts-GoogleMap'), {
         center: myLatLng,
-        zoom: 13,
+        zoom: 16,
         styles: CTSMap_Style
     });
     

@@ -27,7 +27,7 @@ desktop-nav,
 mobile-nav {
     position: fixed;
     top: 0px;
-    z-index: 50;
+    z-index: 200;
     background-color: @color-black;
 }
 
@@ -38,7 +38,7 @@ desktop-nav {
 mobile-nav {
     nav-header {
         display: block;
-        z-index: 100;
+        z-index: 200;
         width: 100vw;
         height: auto;
         padding: 1vw;
@@ -70,7 +70,7 @@ mobile-nav {
         position: absolute;
         top: -100vh;
 
-        z-index: 50;
+        z-index: 200;
 
         .flex-display(flex);
         .flex-direction(column);
@@ -184,10 +184,10 @@ desktop-nav {
                     width: 1.4vw;
                     height: 1.4vw;
                 }
-                &.route-active{
+                &.route-active {
                     font-weight: 900;
                 }
-                &:hover{
+                &:hover {
                     opacity: 0.5;
                 }
             }
@@ -222,7 +222,7 @@ desktop-nav {
             nav-menu item {
                 background-color: @color-black !important;
                 color: white !important;
-                img{
+                img {
                     filter: invert(100%);
                 }
             }
@@ -239,7 +239,7 @@ desktop-nav {
             nav-menu item {
                 background-color: @color-black !important;
                 color: white !important;
-                img{
+                img {
                     filter: invert(100%);
                 }
             }
@@ -259,7 +259,7 @@ desktop-nav {
                 background-color: @color-yellow !important;
 
                 color: black !important;
-                img{
+                img {
                     filter: invert(0%);
                 }
 

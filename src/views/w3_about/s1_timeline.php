@@ -1,5 +1,5 @@
-<section name="aboutTimeline" sectionNumber="2" id="w3s2" class="">
-    <wrapper>
+<section name="aboutTimeline" sectionNumber="2" id="w3s2" class="fp-auto-height">
+    <wrapper >
 
 
         <section-title>
@@ -83,7 +83,7 @@ implementación de un sistema de gestión de la calidad.">
 
 
 
-        <div class="desktop">
+        <div class="desktop" >
             <timeline-desktop>
 
                 <column class="left">
@@ -93,7 +93,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">NACEN NUESTRAS INSTALACIONES</h3>
                             <img src="img/underlines/underline_timeline_1.png">
                         </item-title><br>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_1.png">
                             <anim id="w3_s1_e1_obj" loop></anim>
                             <item-description>
@@ -110,7 +110,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">EDUCACIÓN BÁSICA PRIMARIA</h3>
                             <img src="img/underlines/underline_timeline_3.png">
                         </item-title><br>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_3.png">
                             <anim id="w3_s1_e2_obj" loop></anim>
                             <item-description>
@@ -126,7 +126,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">EDUCACIÓN BÁSICA SECUNDARIA</h3>
                             <img src="img/underlines/underline_timeline_5.png">
                         </item-title><br>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_5.png">
                             <anim id="w3_s1_e3_obj" loop></anim>
                             <item-description>
@@ -142,7 +142,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">LOGRAMOS NUEVOS CONVENIOS</h3>
                             <img src="img/underlines/underline_timeline_7.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_7.png">
                             <anim id="w3_s1_e4_obj" loop></anim>
                             <item-description>
@@ -158,7 +158,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">AMPLIAMOS NUESTROS SERVICIOS</h3>
                             <img src="img/underlines/underline_timeline_9.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_9.png">
                             <anim id="w3_s1_e5_obj" loop></anim>
                             <item-description>
@@ -174,7 +174,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">MANTENEMOS NUESTROS ACUERDOS</h3>
                             <img src="img/underlines/underline_timeline_11.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_11.png">
                             <anim id="w3_s1_e6_obj" loop></anim>
                             <item-description>
@@ -209,7 +209,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">INICAMOS LABORES</h3>
                             <img src="img/underlines/underline_timeline_2.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_2.png">
                             <anim id="w3_s1_e7_obj" loop></anim>
                             <item-description>
@@ -226,7 +226,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">AMPLIAMOS NUESTROS SERVICIOS</h3>
                             <img src="img/underlines/underline_timeline_4.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_4.png">
                             <anim id="w3_s1_e8_obj" loop></anim>
                             <item-description>
@@ -243,7 +243,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">ALCANZAMOS NUESTRAS METAS</h3>
                             <img src="img/underlines/underline_timeline_6.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_6.png">
                             <anim id="w3_s1_e9_obj" loop></anim>
                             <item-description>
@@ -260,7 +260,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">INICIAMOS EDUCACIÓN DE BACHILLERATO</h3>
                             <img src="img/underlines/underline_timeline_8.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_8.png">
                             <anim id="w3_s1_e10_obj" loop></anim>
                             <item-description>
@@ -276,7 +276,7 @@ implementación de un sistema de gestión de la calidad.">
                             <h3 class="fc-yellow f-cat">GESTIONAMOS LA CALIDAD</h3>
                             <img src="img/underlines/underline_timeline_10.png">
                         </item-title>
-                        <item-content>
+                        <item-content onHoverOpacity>
                             <img src="img/timeline/timeline_10.png">
                             <anim id="w3_s1_e11_obj" loop></anim>
                             <item-description>

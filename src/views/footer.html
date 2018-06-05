@@ -42,7 +42,15 @@
 
 
     </mobile-footer>
-
+<style>
+    [onHoverOpacity]{
+        opacity: 1;
+        cursor: pointer;
+    }
+    [onHoverOpacity]:hover{
+        opacity: 0.85;
+    }
+    </style>
 
     <desktop-footer>
         <wrapper>
@@ -52,7 +60,7 @@
             <footer-line></footer-line>
             <footer-item class="mensaje">
                 <h2>EL FUTURO DE <br>LA EDUCACIÓN TECNOLÓGICA</h2>
-                <h3 routeTo="contact">TRABAJA CON NOSOTROS</h3>
+                <h3 routeTo="contact" onHoverOpacity>TRABAJA CON NOSOTROS</h3>
             </footer-item>
             <footer-line></footer-line>
             <footer-item class="contacto">

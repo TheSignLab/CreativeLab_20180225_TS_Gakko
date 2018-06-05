@@ -14,3 +14,8 @@ span[color="yellow"] {
 section[name="admissionContact"] wrapper {
   padding-bottom: 30vw;
 }
+@media (min-width: 1200px)  {
+  section[name="admissionContact"] wrapper {
+    padding-bottom: 0vw;
+  }
+}

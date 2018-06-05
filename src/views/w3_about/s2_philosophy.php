@@ -5,7 +5,7 @@
     <column class="first">
 
         <p class="slide-content">
-            Realización plena de los estudiantes como seres humanos , con orientación católica, inspirados en el amor a Dios sobre todas las cosas, hacia la excelencia, liderados por directivos y docentes comprometidos en la formación de nuevas generaciones competentes y exitosas.encia del servicio.
+           Realización plena de los estudiantes como seres humanos , con orientación católica, inspirados en el amor a Dios sobre todas las cosas, hacia la excelencia, liderados por directivos y docentes comprometidos en la formación de nuevas generaciones competentes y exitosas.
 
 </p>
 
@@ -123,7 +123,7 @@
             </div>
 
             <div class="swiper-paso" paso="2">
-                           <img id="w3_s3_t2_e1_img" alt="Niña Maleta" src="/img/img-floating/w3_about/m/CTS_25.png" lazy-src="/img/img-floating/w3_about/CTS_26.png">
+                           <img id="w3_s3_t2_e1_img" alt="Niña Maleta" src="/img/img-floating/w3_about/m/CTS_25.png" lazy-src="/img/img-floating/w3_about/CTS_25.png">
                     <anim id="w3_s3_t2_e1_obj" alt="Birrete"></anim>
                 <div class="mobile">
          
