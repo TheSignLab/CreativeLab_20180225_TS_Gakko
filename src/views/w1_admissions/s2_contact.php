@@ -1,5 +1,5 @@
 <section name="admissionContact" sectionNumber="3" id="w1s3" class="" bg_yellow>
-    <wrapper bg_yellow>
+    <wrapper bg_yellow >
 
         <section-title class="small">
             <h2>

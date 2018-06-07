@@ -98,13 +98,13 @@ span[color="yellow"] {
     left: auto;
   }
   #w5_s2_e4_obj[alt="Lapiz"] {
-    position: absolute;
+    position: relative;
     top: auto;
-    bottom: 5vw;
-    width: 19vw;
-    margin: 0 auto;
+    bottom: auto;
+    width: 20vw;
+    margin: 5vw auto;
     display: block;
-    right: calc(41vw);
+    right: auto;
     z-index: 100;
     left: auto;
   }

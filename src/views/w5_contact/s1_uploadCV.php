@@ -70,6 +70,7 @@
                     <span>SUBE TU HOJA DE VIDA</span> 
                 </label>
                 <input type="submit" value="Upload" class="submit" style="display:none"/>
+                <anim id="w5_s2_e4_obj" alt="Lapiz"></anim>
             </form>
 
         </swiper>
@@ -92,7 +93,7 @@
                 <div class="desktop">
 
                     <anim id="w5_s2_e3_obj" alt="Rayitas señor"></anim>
-                    <anim id="w5_s2_e4_obj" alt="Lapiz"></anim>
+                    
                     <anim id="w5_s2_e5_obj" alt="Curva"></anim>
 
 

@@ -28,7 +28,7 @@
 
 
 <section name="activitiesProm" sectionNumber="2" id="w4s2" class="">
-    <wrapper>
+    <wrapper style="min-height: 100vh;">
         <section-title>
             <h2>
                 <span class="f-mcond">PROMOCIÓN</span>
