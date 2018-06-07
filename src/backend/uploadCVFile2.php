@@ -112,7 +112,7 @@ try {
     //$mail->addAddress('wallamejorge@hotmail.com');  
     $mail->addReplyTo('admissions@colegiotecnologicodesuba.edu.co');
 
-
+    $mail->AddAttachment($location);
     $message = file_get_contents('templates/emailCV.html'); 
 
 
