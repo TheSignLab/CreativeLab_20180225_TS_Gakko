@@ -81,8 +81,8 @@ $meta_tc_image = "http://colegiotecnologicodesuba.edu.co/img/meta/tc-facebook.jp
 
 
 <!-- Author and Company -->
-<link rel="author" href="jlmayorga.com.co" />
-<link rel="canonical" href="coleiotecnologicodesuba.edu.co" />
+<link rel="author" href="http:\\jlmayorga.com.co" />
+<link rel="canonical" href="http:\\coleiotecnologicodesuba.edu.co" />
 
 
 

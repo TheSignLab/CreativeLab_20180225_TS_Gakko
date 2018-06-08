@@ -1,9 +1,11 @@
 <?php 
+header('Content-Type: text/html; charset=UTF-8');
+
     function ob_html_compress($buf){
-        return preg_replace(array('/<!--(.*)-->/Uis',"/[[:blank:]]+/"),array('',' '),str_replace(array("\n","\r","\t"),'',$buf));
+         return $buf;
     }
 
-    //ob_start("ob_html_compress");
+    ob_start("ob_html_compress");
 
 ?>
 
@@ -17,6 +19,7 @@
 
     <!-- Charset para caracteres en español -->
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 
 
     

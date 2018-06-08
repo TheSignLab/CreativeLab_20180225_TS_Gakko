@@ -1,4 +1,4 @@
-<section name="home35Years" sectionNumber="3" id="w1s3" class="cover35Years">
+<section name="home35Years" sectionNumber="3" id="w0s3" class="cover35Years">
 <wrapper>
 
     <cover-title>
