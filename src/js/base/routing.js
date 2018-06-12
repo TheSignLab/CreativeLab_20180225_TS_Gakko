@@ -117,7 +117,7 @@ $(document).ready(function () {
 
 
         try {
-            navigator.vibrate(1000);
+            navigator.vibrate(350);
         } catch (e) {
             console.error("No esta habilitado vibrate")
         }

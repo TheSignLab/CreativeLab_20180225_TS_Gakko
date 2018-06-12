@@ -1113,7 +1113,7 @@ swiper[swiper-type="swiper-photo"] .swiper-buttonNext {
   swiper[swiper-type="swiper-photo"] wrapper-img {
     display: block;
     width: 100%;
-    height: 52vh;
+    height: calc(45vw);
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
@@ -4741,7 +4741,6 @@ section[name="activitiesProm"] wrapper swiper[swiper-type="swiper-photo"] wrappe
   section[name="activitiesProm"] wrapper swiper[swiper-type="swiper-photo"] wrapper-img {
     display: block;
     width: 100%;
-    height: 60vh;
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
@@ -5181,6 +5180,73 @@ img.hands {
 [hidden] {
   display: none !important;
 }
+<<<<<<< HEAD
+section.toFit {
+  height: fit-content;
+  min-height: 100vh;
+}
+section.toFit .fp-tableCell {
+  height: fit-content;
+  min-height: 100vh;
+}
+section.toFit .fp-tableCell wrapper {
+  height: fit-content;
+  min-height: fit-content;
+}
+@media (min-width: 1200px)  {
+  section.toFit {
+    height: 100%;
+    min-height: 0vh;
+  }
+  section.toFit .fp-tableCell {
+    height: 100%;
+    min-height: 0vh;
+  }
+  section.toFit .fp-tableCell wrapper {
+    height: 100%;
+    min-height: 0vh;
+  }
+  section[name="activitiesProm"] {
+    height: fit-content;
+    min-height: fit-content;
+  }
+  section[name="activitiesProm"] .fp-tableCell {
+    height: 100%;
+    min-height: fit-content;
+  }
+  section[name="activitiesProm"] .fp-tableCell wrapper {
+    height: 100%;
+    min-height: fit-content;
+  }
+}
+/* customize scrollbar css
+	::-webkit-scrollbar{
+		width:13px;
+		background-color:#cccccc;
+	}
+	::-webkit-scrollbar:horizontal{
+		height:13px;
+	}
+	::-webkit-scrollbar-track{
+		border:1px #787878 solid;
+		border-radius:10px;
+		-webkit-box-shadow:0 0 6px #c8c8c8 inset;
+	}
+	::-webkit-scrollbar-thumb{
+		background-color:#ffcb27;
+		border:1px solid #ffcb27;
+		border-radius:16px;
+	}
+	::-webkit-scrollbar-thumb:hover{
+		background-color:#ffcb27;
+		border:1px solid #ffcb27;
+	}
+	::-webkit-scrollbar-thumb:active{
+		background-color:#ffcb27;
+		border:1px solid #333333;
+	}
+ */
+=======
 ::-webkit-scrollbar {
   background: transparent;
   overflow: visible;
@@ -5214,3 +5280,4 @@ img.hands {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #999;
 }
+>>>>>>> 8e63432023c2af5beab50ee152f0d2e8cb1ccbda

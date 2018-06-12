@@ -27,8 +27,13 @@
 ?>
 
 
+<<<<<<< HEAD
+<section name="activitiesProm" sectionNumber="2" id="w4s2" class="toFit">
+    <wrapper>
+=======
 <section name="activitiesProm" sectionNumber="2" id="w4s2" class="">
     <wrapper style="min-height: 100vh;">
+>>>>>>> 8e63432023c2af5beab50ee152f0d2e8cb1ccbda
         <section-title>
             <h2>
                 <span class="f-mcond">PROMOCIÓN</span>

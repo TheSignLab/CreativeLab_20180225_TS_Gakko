@@ -93,8 +93,8 @@
 
 ?>
 
-<section name="aboutPhilosophy" sectionNumber="3" id="w3s3" class="" style="    min-height: 100vh;">
-    <wrapper  style="height: 100%;">
+<section name="aboutPhilosophy" sectionNumber="3" id="w3s3" class="toFit" style="">
+   <wrapper style="">
         <section-title>
             <h2> <span class="f-mcond">FILOSOFÍA</span> <span class="f-cat">INSTITUCIONAL</span> </h2>
         </section-title>
